@@ -13,7 +13,7 @@ Startup a hugo project with:
 
 ### 1. install the dependencies
 - if you don't have it already, install [hugo](www.gohugo.io), node and npm. if you are on mac do everything with brew.
-- install the project de
+- install the project dependencies 
  ```
  npm install
  ```

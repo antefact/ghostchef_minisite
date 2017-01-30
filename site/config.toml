@@ -1,6 +1,6 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://antefact.github.io/ghostchef_minisite/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Ghost Chef 👻🍳"
 theme ="zen"
 
 [params]

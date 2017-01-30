@@ -51,6 +51,20 @@ theme ="zen"
     caption= "this is the main gif"
     width=6
 
+    [[params.credits]]
+    name = "bxb"
+    logo = "bxb_logo.png"
+    link= "http://www.bitsandbites.com"
+    [[params.credits]]
+    name = "Mill"
+    logo = "mill-logo.png"
+    link= "http://www.mill-intelligence.com"
+    [[params.credits]]
+    name = "Antefact"
+    logo = "antefact_logo.png"
+    link= "http://www.antefact.com"
+
+
   # Navigation
 	[params.navigation]
 		brand = "brand"

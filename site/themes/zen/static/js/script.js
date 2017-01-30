@@ -8,8 +8,6 @@ $('a').click(function() {
 
 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-var playButton;
-var video;
 
 window.onload = function() {
 
@@ -29,7 +27,6 @@ $(document).ready(function() {
 
     // Video
 
-     console.log(playButton);
 
 
     $("#play-button").click( function() {

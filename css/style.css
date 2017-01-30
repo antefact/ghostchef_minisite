@@ -6903,4 +6903,8 @@ a:hover {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   padding: 30px 38px;
+  opacity: 1;
+}
+.playOverlay.playing {
+  opacity: 0;
 }

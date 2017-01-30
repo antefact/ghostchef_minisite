@@ -1,8 +1,8 @@
 var $root = $('html, body');
 $('a').click(function() {
     $root.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top-$( window ).height()
-          }, 500);
+        scrollTop: $($.attr(this, 'href')).offset().top - $(window).height()
+    }, 500);
     return false;
 });
 
@@ -18,25 +18,33 @@ window.onload = function() {
 
 $(document).ready(function() {
     $('#fullpage').fullpage({
-      fitToSection: false,
-      fitToSectionDelay: 1000,
-      autoScrolling:false,
-      scrollBar:true
+        fitToSection: false,
+        fitToSectionDelay: 1000,
+        autoScrolling: false,
+        scrollBar: true
 
     });
 
     // Video
 
+    $("#video").get(0).addEventListener('play', toggleBigButton, false);
+    $("#video").get(0).addEventListener('pause', toggleBigButton, false);
 
 
-    $("#play-button").click( function() {
-      if (  $("#video").get(0).paused == true) {
-        $("#video").get(0).play();
+    function toggleBigButton() {
+        if ($("#video").get(0).paused == true) {
+            $("#play-button").removeClass('playing');
+        } else {
+            $("#play-button").addClass('playing');
+        }
+    }
 
-      } else {
-        // Pause the video
-        $("#video").get(0).pause();
-      }
+    $("#play-button").click(function() {
+        if ($("#video").get(0).paused == true) {
+            $("#video").get(0).play();
+        } else {
+            $("#video").get(0).pause();
+        }
     });
 
 });

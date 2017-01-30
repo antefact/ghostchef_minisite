@@ -33,8 +33,7 @@
     -o-transition: @transition;
 }
 
-.vertical-align(@position) {
-    position: @position;
+.vertical-align() {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -126,7 +125,7 @@ a:hover {
 }
 
 .middle {
-    .vertical-align(relative)
+    .vertical-align()
 }
 // .fill{
 //   height: 100%;
@@ -203,4 +202,40 @@ a:hover {
       opacity: 0;
     }
 
+}
+
+.overlay{
+  .vertical-align();
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.contacts{
+  padding: 20px;
+  /* If you are intereste: */
+  font-family: RobotoMono-Medium;
+  font-size: 34px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+}
+
+.highlight-yellow{
+  color: yellow;
+}
+
+.bg-black{
+  background-color: #000;
+  color: white;
+}
+
+.claim{
+  text-align: center;
+  /* a project by: */
+font-family: RobotoMono-Light;
+font-size: 15px;
+color: #000000;
+letter-spacing: 0;
 }

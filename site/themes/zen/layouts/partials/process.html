@@ -1,0 +1,10 @@
+<section id="progress" class="section">
+  {{range .Site.Params.processGallery.photos}}
+  <div class="slide" data-anchor="slide1">
+    <figure>
+        <img class="img-responsive" data-src="/img/{{.}}"  />
+    </figure>
+
+  </div>
+  {{end}}
+</section>

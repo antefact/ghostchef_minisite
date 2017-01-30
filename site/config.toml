@@ -1,0 +1,66 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme ="zen"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All blog posts are defined in their own files.
+
+	title = "👻🍳 Ghost Chef 👻🍳"
+	subtitle = "A research on generative tools and food"
+
+  [params.processGallery]
+    photos=[
+    "centaurkitchen.png",
+    "centaurkitchen2.png"
+    ]
+
+  [params.interactionDetail]
+    [params.interactionDetail.headerGif]
+    name = "globalGIf"
+    fileName = "screencapture1.png"
+    caption= "this is the main gif"
+    width=12
+
+    [[params.interactionDetail.gifs]]
+    name = "globalGIf"
+    fileName = "screencapture2.png"
+    caption= "this is the main gif"
+    width=6
+
+
+    [[params.interactionDetail.gifs]]
+    name = "globalGIf"
+    fileName = "screencapture3.png"
+    caption= "this is the main gif"
+    width=6
+
+    [[params.interactionDetail.gifs]]
+    name = "globalGIf"
+    fileName = "screencapture4.png"
+    caption= "this is the main gif"
+    width=6
+
+    [[params.interactionDetail.gifs]]
+    name = "globalGIf"
+    fileName = "screencapture5.png"
+    caption= "this is the main gif"
+    width=6
+
+  # Navigation
+	[params.navigation]
+		brand = "brand"
+
+	[params.navigation.links]
+
+  [params.navigation.links.blog]
+		name     = "blog"
+		link = "/blog"
+
+  [params.navigation.links.services]
+  	name     = "services"
+  	link = "#services"

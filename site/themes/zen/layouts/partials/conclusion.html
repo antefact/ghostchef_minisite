@@ -1,0 +1,17 @@
+<section id="conclusion" class="section">
+    <div class="container fill">
+        <div class="row fill">
+
+          <div class="col-md-9">
+
+            {{ range .Data.Pages }}
+                {{if and (eq .Title "conclusion") }}
+                    {{.Content}}
+                {{end}}
+            {{ end }}
+
+          </div>
+
+        </div>
+    </div>
+</section>

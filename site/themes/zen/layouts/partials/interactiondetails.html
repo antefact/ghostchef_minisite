@@ -4,7 +4,7 @@
         <div class="card card-{{ .Site.Params.interactionDetail.headerGif.width }}">
             <div class="interaction-gif">
                 <figure class="img-responsive">
-                    <img class="img-responsive" data-src="/img/{{.Site.Params.interactionDetail.headerGif.fileName}}"/>
+                    <img class="img-responsive" data-src="{{ $.Site.BaseURL }}img/{{.Site.Params.interactionDetail.headerGif.fileName}}"/>
                 </figure>
                 <div class="caption">
                     <span>

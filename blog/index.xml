@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog-rsses on 👻🍳 Ghost Chef 👻🍳</title>
-    <link>http://replace-this-with-your-hugo-site.com/blog/index.xml</link>
+    <link>https://antefact.github.io/ghostchef_minisite/blog/index.xml</link>
     <description>Recent content in Blog-rsses on 👻🍳 Ghost Chef 👻🍳</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Oct 2016 11:04:14 +0800</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://antefact.github.io/ghostchef_minisite/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>myfirstPost</title>
-      <link>http://replace-this-with-your-hugo-site.com/blog/myfirstPost/</link>
+      <link>https://antefact.github.io/ghostchef_minisite/blog/myfirstPost/</link>
       <pubDate>Tue, 25 Oct 2016 11:04:14 +0800</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/blog/myfirstPost/</guid>
+      <guid>https://antefact.github.io/ghostchef_minisite/blog/myfirstPost/</guid>
       <description>&lt;p&gt;this is a first example post&lt;/p&gt;
 </description>
     </item>

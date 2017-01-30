@@ -1,0 +1,203 @@
+@import "bootstrap/bootstrap.less";
+@import "../css/aos.css";
+@import "font-awesome/less/font-awesome.less"; //colors
+@cyan: #34BCEF;
+@magenta: #E0107C;
+@dark-gray: #3F4346;
+@light-gray: #EFEFEF;
+@white: #fff;
+@rat: #9B928C; // Font-Size
+@base-font-size: 1em; // Line-Height
+@base-line-height: 1.5;
+@header-line-height: 1.25; //sizes
+@bp-small: 48em; // 768px
+@bp-medium: 64em; // 1024px
+@bp-large: 85.375em; // 1366px
+@bp-xlarge: 120em; // 1920px
+@bp-xxlarge: 160em; // 2560px
+// Media Queries
+@mq-small: ~"(min-width: @{bp-small})";
+@mq-medium: ~"(min-width: @{bp-medium})";
+@mq-large: ~"(min-width: @{bp-large})";
+@mq-xlarge: ~"(min-width: @{bp-xlarge})";
+@mq-xxlarge: ~"(min-width: @{bp-xxlarge})";
+@mq-retina: ~"(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+@navbar-height: 70px;
+
+.container {
+    max-width: 970px;
+}
+
+.transition (@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -ms-transition: @transition;
+    -o-transition: @transition;
+}
+
+.vertical-align(@position) {
+    position: @position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.element p {
+    @include vertical-align();
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto Mono', monospace;
+
+    a:focus,
+    a:hover {
+        text-decoration: none;
+    }
+    .transition( font-size 1s);
+}
+
+h1 {
+    //  font-size: @base-font-size*3;
+    @media @mq-medium {
+        font-size: @base-font-size*3;
+    }
+    @media @mq-large {
+        font-size: @base-font-size*3;
+    }
+    @media @mq-xlarge {
+        font-size: @base-font-size*5;
+    }
+    @media @mq-xxlarge {
+        font-size: @base-font-size*8;
+    }
+}
+
+h2 {
+    //  font-size: @base-font-size*3;
+    font-size: @base-font-size*2;
+    @media @mq-medium {
+        font-size: @base-font-size*2;
+    }
+    @media @mq-large {
+        font-size: @base-font-size*2.8;
+    }
+    @media @mq-xlarge {
+        font-size: @base-font-size*3.5;
+    }
+    @media @mq-xxlarge {
+        font-size: @base-font-size*4;
+    }
+}
+
+p {
+    /* Spicy jalapeno chick: */
+    font-family: Roboto-Regular;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 1.6px;
+    line-height: 36px;
+    font-size: @base-font-size*1;
+    @media @mq-medium {
+        font-size: @base-font-size*1;
+    }
+    @media @mq-large {
+        font-size: @base-font-size*1;
+    }
+    @media @mq-xlarge {
+        font-size: @base-font-size*1;
+    }
+    @media @mq-xxlarge {
+        font-size: @base-font-size*1.5;
+    }
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+.middle {
+    .vertical-align(relative)
+}
+// .fill{
+//   height: 100%;
+// }
+
+#interaction {
+    background-color: black;
+
+    .interaction-gif {
+        img {
+            width: 100%;
+        }
+
+        .caption {
+            vertical-align: bottom;
+            position: relative;
+            bottom: 10px;
+            left: 10px;
+
+            span {
+                vertical-align: bottom;
+                /* Follow along with so Copy 2: */
+                font-family: Roboto-Regular;
+                font-size: 20px;
+                color: #000000;
+                letter-spacing: 1.6px;
+                line-height: 36px;
+                bottom: 5px;
+                margin: 0 auto;
+                padding: 0 5px;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.columns {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    -webkit-column-fill: auto;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -moz-column-fill: auto;
+    column-count: 2;
+    column-gap: 15px;
+    column-fill: auto;
+}
+
+.card {
+    display: inline-block;
+
+    &.card-6 {}
+
+    &.card-12 {}
+}
+
+#hero {
+    text-align: center;
+}
+
+.playOverlay {
+    position: absolute;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+padding: 30px 38px;
+
+}

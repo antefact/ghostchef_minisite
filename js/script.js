@@ -21,7 +21,25 @@ $(window).on('load',function(){
             "<i class='fa fa-chevron-right fa-2x' aria-hidden='true'></i>"
         ],
     });
+
+    $.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) {
+      if ( data.address.country_code == 'CN' ) {
+        replaceGoogleCDN();
+
+        console.log ("you are not the only one watching this from china!");
+      }
+    });
+
   });
+
+
+  function replaceGoogleCDN() {
+    $('link').each(function(){
+      var $intial  = $(this).attr('href'),
+          $replace = $intial.replace('//fonts.googleapis.com/', '//fonts.useso.com/');
+          $(this).attr('href', $replace);
+    });
+  }
 
 
 $(document).ready(function() {

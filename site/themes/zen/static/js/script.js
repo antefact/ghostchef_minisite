@@ -24,6 +24,13 @@ $(document).ready(function() {
         scrollBar: true
 
     });
+    $(".owl-carousel").owlCarousel({
+      center: true,
+      items:1.1,
+      loop:true
+
+    });
+
 
     // Video
 

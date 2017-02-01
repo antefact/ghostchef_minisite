@@ -25,9 +25,14 @@ $(document).ready(function() {
 
     });
     $(".owl-carousel").owlCarousel({
-      center: true,
-      items:1.1,
-      loop:true
+        center: true,
+        items: 1.1,
+        loop: true,
+        nav: true,
+        navText: [
+            "<i class='fa fa-chevron-left fa-2x' aria-hidden='true'></i>",
+            "<i class='fa fa-chevron-right fa-2x' aria-hidden='true'></i>"
+        ],
 
     });
 

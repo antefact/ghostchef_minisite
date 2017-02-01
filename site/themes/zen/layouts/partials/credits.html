@@ -1,5 +1,5 @@
 <section id="credits">
-    <div class="container">
+    <div class="container middle">
 
         <div class="row row-centered">
           <div class="col-md-12 claim">
@@ -8,10 +8,10 @@
         </div>
         <div class="row">
             {{ range .Site.Params.credits}}
-                <div class=col-md-4>
+                <div class=col-sm-4>
                   <a href="{{.link}}">
                     <figure>
-                        <img class="img-responsive" data-src="{{$.Site.BaseURL}}img/{{.logo}}"/>
+                        <img class="img-responsive" src="{{$.Site.BaseURL}}img/{{.logo}}"/>
                     </figure>
                   </a>
 

@@ -1,10 +1,10 @@
-<section id="interaction" class="section">
+<section id="interaction" class="section-big">
     <div class="container">
 
         <div class="card card-{{ .Site.Params.interactionDetail.headerGif.width }}">
             <div class="interaction-gif">
                 <figure class="img-responsive">
-                    <img class="img-responsive" data-src="{{ $.Site.BaseURL }}img/{{.Site.Params.interactionDetail.headerGif.fileName}}"/>
+                    <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{.Site.Params.interactionDetail.headerGif.fileName}}"/>
                 </figure>
                 <div class="caption">
                     <span>
@@ -19,7 +19,7 @@
                 <div class="card card-{{ .width }}">
                     <div class="interaction-gif">
                         <figure class="img-responsive">
-                            <img class="img-responsive" data-src="{{.Site.BaseURL}}img/{{.fileName}}"/>
+                            <img class="img-responsive" src="{{.Site.BaseURL}}img/{{.fileName}}"/>
                         </figure>
                         <div class="caption">
                             <span>

@@ -30,33 +30,33 @@ theme ="zen"
   [params.interactionDetail]
     [params.interactionDetail.headerGif]
     name = "globalGIf"
-    fileName = "screencapture1.png"
-    caption= "this is the main gif"
+    fileName = "gif_top.gif"
+    caption= "Just start interacting with ghostchef by writing in something. Feel free to start from an ingredient, a recipe, a combination or even an emotion."
     width=12
 
     [[params.interactionDetail.gifs]]
     name = "globalGIf"
-    fileName = "screencapture2.png"
-    caption= "this is the main gif"
+    fileName = "gif2.gif"
+    caption= "Decide who's going to be your ghost chef, which culinary identity should inspire you."
     width=6
 
 
     [[params.interactionDetail.gifs]]
     name = "globalGIf"
-    fileName = "screencapture3.png"
-    caption= "this is the main gif"
+    fileName = "gif4.gif"
+    caption= "Tweak the intelligence behaviour by adjusting each chef specific settings."
     width=6
 
     [[params.interactionDetail.gifs]]
     name = "globalGIf"
-    fileName = "screencapture4.png"
-    caption= "this is the main gif"
+    fileName = "gif5.gif"
+    caption= "Teach the sysyem your style and record your personal culinary identity."
     width=6
 
     [[params.interactionDetail.gifs]]
     name = "globalGIf"
-    fileName = "screencapture5.png"
-    caption= "this is the main gif"
+    fileName = "gif3.gif"
+    caption= "Access premium features like plating and task management."
     width=6
 
     [[params.credits]]

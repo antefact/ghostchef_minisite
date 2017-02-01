@@ -175,12 +175,66 @@ a:hover {
       transform:translateY(-50%);
     }
 }
+
 #video{
   .videoContainer{
     position: relative;
+    .middle{
+      transform:translateY(-50%) translateX(-50%);
+
+    }
   }
 
+  .playOverlay {
+      background-color: yellow;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      opacity: 1;
+      @media @bs3-xs {
+          width: 40px;
+          height: 40px;
+          padding: 7px 11px;
 
+          .fa {
+              font-size: 2em !important;
+          }
+      }
+      @media @bs3-sm {
+          width: 50px;
+          height: 50px;
+          padding: 13px 15px;
+          .fa {
+              font-size: 2em !important;
+          }
+      }
+      @media @bs3-md {
+          width: 100px;
+          height: 100px;
+          padding: 23px 32px;
+          .fa {
+              font-size: 4em !important;
+          }
+      }
+
+      &.playing {
+          opacity: 0;
+      }
+  }
+}
+
+#contact{
+  .overlay-container{
+    @media @bs3-xs {
+      position: relative;
+    }
+  }
+  .contacts {
+      padding: 20px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+  }
 }
 
 .overlay-container{
@@ -192,44 +246,6 @@ a:hover {
 }
 
 
-.playOverlay {
-    background-color: yellow;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    opacity: 1;
-    @media @bs3-xs {
-        width: 40px;
-        height: 40px;
-        padding: 7px 11px;
-
-        .fa {
-            font-size: 2em !important;
-        }
-    }
-    @media @bs3-sm {
-        width: 50px;
-        height: 50px;
-        padding: 13px 15px;
-        .fa {
-            font-size: 2em !important;
-        }
-    }
-    @media @bs3-md {
-        width: 100px;
-        height: 100px;
-        padding: 23px 32px;
-        .fa {
-            font-size: 4em !important;
-        }
-    }
-
-    &.playing {
-        opacity: 0;
-    }
-}
-
 .overlay {
     .vertical-align();
     position: absolute;
@@ -239,11 +255,7 @@ a:hover {
     transform: translateX(-50%);
 }
 
-.contacts {
-    padding: 20px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-}
+
 
 .highlight-yellow {
     color: yellow;
@@ -268,6 +280,7 @@ a:hover {
     color: yellow;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
 
     .owl-prev {
         float: left;

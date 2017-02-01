@@ -1,5 +1,12 @@
 @import "bootstrap/bootstrap.less";
-
+@bs3-xs: ~"only screen and (max-width:767px)";
+/*  For Phones*/
+@bs3-sm: ~"only screen and (min-width:@{screen-sm-min})";
+/*  For Small devices Tablets*/
+@bs3-md: ~"only screen and (min-width:@{screen-md-min})";
+/*  For Medium devices Desktops */
+@bs3-lg: ~"only screen and (min-width:@{screen-lg-min})";
+/*  For Large devices Desktops */
 @navbar-height: 70px;
 
 .container {
@@ -14,6 +21,7 @@
 }
 
 .vertical-align() {
+    position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -36,7 +44,7 @@ h3,
 h4,
 h5 {
     font-family: 'Roboto Mono', monospace;
-
+    text-align: center;
     a:focus,
     a:hover {
         text-decoration: none;
@@ -45,22 +53,44 @@ h5 {
 }
 
 h1 {
-  font-size: 2em;
+    font-size: 4em;
+    @media @bs3-xs {
+        font-size: 2em;
+    }
+    @media @bs3-sm {
+        font-size: 3em;
+    }
+    @media @bs3-md {
+        font-size: 4em;
+    }
 }
 
 h2 {
-  font-size: 1.5em;
-
+    font-size: 3em;
+    @media @bs3-xs {
+        font-size: 1.5em;
+    }
+    @media @bs3-sm {
+        font-size: 2em;
+    }
+    @media @bs3-md {
+        font-size: 3em;
+    }
 }
 
 p {
     /* Spicy jalapeno chick: */
     font-family: Roboto;
-    font-size: 0.9em;
+    font-size: 1em;
     color: #000000;
     letter-spacing: 1.6px;
     line-height: 36px;
-
+    @media @bs3-xs {
+        font-size: 0.9em;
+    }
+    @media @bs3-md {
+        font-size: 1em;
+    }
 }
 
 a:focus,
@@ -69,14 +99,19 @@ a:hover {
 }
 
 .middle {
-    .vertical-align()
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 
 #interaction {
     background-color: black;
+    padding: 15px 0px;
 
     .interaction-gif {
+      padding: 15px;
         img {
             width: 100%;
         }
@@ -114,10 +149,18 @@ a:hover {
     column-count: 2;
     column-gap: 15px;
     column-fill: auto;
+    @media @bs3-xs {
+        column-count: 1;
+    }
+    @media @bs3-sm {
+        column-count: 2;
+    }
+    @media @bs3-md {}
 }
 
 .card {
     display: inline-block;
+    width: 100%;
 
     &.card-6 {}
 
@@ -126,71 +169,151 @@ a:hover {
 
 #hero {
     text-align: center;
+    height: 100% !important;
+
+    .middle{
+      transform:translateY(-50%);
+    }
 }
 
-.playOverlay {
+#video{
+  .videoContainer{
+    position: relative;
+    .middle{
+      transform:translateY(-50%) translateX(-50%);
+
+    }
+  }
+
+  .playOverlay {
+      background-color: yellow;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      opacity: 1;
+      @media @bs3-xs {
+          width: 40px;
+          height: 40px;
+          padding: 7px 11px;
+
+          .fa {
+              font-size: 2em !important;
+          }
+      }
+      @media @bs3-sm {
+          width: 50px;
+          height: 50px;
+          padding: 13px 15px;
+          .fa {
+              font-size: 2em !important;
+          }
+      }
+      @media @bs3-md {
+          width: 100px;
+          height: 100px;
+          padding: 23px 32px;
+          .fa {
+              font-size: 4em !important;
+          }
+      }
+
+      &.playing {
+          opacity: 0;
+      }
+  }
+}
+
+#contact{
+  .overlay-container{
+    @media @bs3-xs {
+      position: relative;
+    }
+  }
+  .contacts {
+      padding: 20px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+  }
+}
+
+.overlay-container{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+
+.overlay {
+    .vertical-align();
     position: absolute;
-    background-color: yellow;
-    width: 100px;
-    height: 100px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    padding: 30px 38px;
-    opacity: 1;
+}
 
-    &.playing{
-      opacity: 0;
+
+
+.highlight-yellow {
+    color: yellow;
+}
+
+.bg-black {
+    background-color: #000;
+    color: white;
+}
+
+.claim {
+    text-align: center;
+    /* a project by: */
+    font-family: RobotoMono-Light;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.owl-nav {
+    width: 100%;
+    color: yellow;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .owl-prev {
+        float: left;
     }
 
+    .owl-next {
+        float: right;
+    }
 }
 
-.overlay{
-  .vertical-align();
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.contacts{
-  padding: 20px;
-  /* If you are intereste: */
-  font-family: RobotoMono-Medium;
-  font-size: 34px;
-  color: #FFFFFF;
-  letter-spacing: 0;
-}
-
-.highlight-yellow{
-  color: yellow;
-}
-
-.bg-black{
-  background-color: #000;
-  color: white;
-}
-
-.claim{
-  text-align: center;
-  /* a project by: */
-font-family: RobotoMono-Light;
-font-size: 15px;
-color: #000000;
-letter-spacing: 0;
-}
-
-.owl-nav{
+section{
+  height: 100%;
   width: 100%;
-color: yellow;
-position: absolute;
-top: 50%;
-  .owl-prev{
-    float: left;
+  position: relative;
+  margin: 0px;
+
+  @media @bs3-xs {
+    height: auto;
+    margin-bottom: 20px;
+
+    .middle{
+      transform: translateY(0);
+      margin-top: auto;
+    }
   }
-  .owl-next{
-    float: right;
-  }
+
+}
+
+.section-big{
+  min-height: 100%;
+  height: auto;
+}
+
+body{
+  height: 100%;
 }

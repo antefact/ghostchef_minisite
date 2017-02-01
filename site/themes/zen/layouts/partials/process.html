@@ -1,15 +1,11 @@
-<section id="progress" class="section">
+<section id="progress">
 
-  <div class="owl-carousel">
-  {{range .Site.Params.processGallery.photos}}
-  <!-- <div class="slide" data-anchor="slide1"> -->
+    <div class="owl-carousel">
+        {{range .Site.Params.processGallery.photos}}
 
-    <figure>
-        <img class="img-responsive" data-src=" {{ $.Site.BaseURL }}img/{{.}}"/>
-    </figure>
+                <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{.}}"/>
 
-  <!-- </div> -->
-  {{end}}
-</div>
+        {{end}}
+    </div>
 
 </section>

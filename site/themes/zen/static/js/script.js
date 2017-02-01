@@ -9,22 +9,9 @@ $('a').click(function() {
 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 
-window.onload = function() {
 
-}
-
-
-
-
-$(document).ready(function() {
-    $('#fullpage').fullpage({
-        fitToSection: false,
-        fitToSectionDelay: 1000,
-        autoScrolling: false,
-        scrollBar: true
-
-    });
-    $(".owl-carousel").owlCarousel({
+$(window).on('load',function(){
+      $('.owl-carousel').owlCarousel({
         center: true,
         items: 1.1,
         loop: true,
@@ -33,18 +20,20 @@ $(document).ready(function() {
             "<i class='fa fa-chevron-left fa-2x' aria-hidden='true'></i>",
             "<i class='fa fa-chevron-right fa-2x' aria-hidden='true'></i>"
         ],
-
     });
+  });
 
+
+$(document).ready(function() {
 
     // Video
 
-    $("#video").get(0).addEventListener('play', toggleBigButton, false);
-    $("#video").get(0).addEventListener('pause', toggleBigButton, false);
+    $("#main-video").get(0).addEventListener('play', toggleBigButton, false);
+    $("#main-video").get(0).addEventListener('pause', toggleBigButton, false);
 
 
     function toggleBigButton() {
-        if ($("#video").get(0).paused == true) {
+        if ($("#main-video").get(0).paused == true) {
             $("#play-button").removeClass('playing');
         } else {
             $("#play-button").addClass('playing');
@@ -52,10 +41,10 @@ $(document).ready(function() {
     }
 
     $("#play-button").click(function() {
-        if ($("#video").get(0).paused == true) {
-            $("#video").get(0).play();
+        if ($("#main-video").get(0).paused == true) {
+            $("#main-video").get(0).play();
         } else {
-            $("#video").get(0).pause();
+            $("#main-video").get(0).pause();
         }
     });
 

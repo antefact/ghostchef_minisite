@@ -1,25 +1,12 @@
 @import "bootstrap/bootstrap.less";
-@cyan: #34BCEF;
-@magenta: #E0107C;
-@dark-gray: #3F4346;
-@light-gray: #EFEFEF;
-@white: #fff;
-@rat: #9B928C; // Font-Size
-@base-font-size: 1em; // Line-Height
-@base-line-height: 1.5;
-@header-line-height: 1.25; //sizes
-@bp-small: 48em; // 768px
-@bp-medium: 64em; // 1024px
-@bp-large: 85.375em; // 1366px
-@bp-xlarge: 120em; // 1920px
-@bp-xxlarge: 160em; // 2560px
-// Media Queries
-@mq-small: ~"(min-width: @{bp-small})";
-@mq-medium: ~"(min-width: @{bp-medium})";
-@mq-large: ~"(min-width: @{bp-large})";
-@mq-xlarge: ~"(min-width: @{bp-xlarge})";
-@mq-xxlarge: ~"(min-width: @{bp-xxlarge})";
-@mq-retina: ~"(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+@bs3-xs: ~"only screen and (max-width:767px)";
+/*  For Phones*/
+@bs3-sm: ~"only screen and (min-width:@{screen-sm-min})";
+/*  For Small devices Tablets*/
+@bs3-md: ~"only screen and (min-width:@{screen-md-min})";
+/*  For Medium devices Desktops */
+@bs3-lg: ~"only screen and (min-width:@{screen-lg-min})";
+/*  For Large devices Desktops */
 @navbar-height: 70px;
 
 .container {
@@ -34,6 +21,7 @@
 }
 
 .vertical-align() {
+    position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -65,57 +53,43 @@ h5 {
 }
 
 h1 {
-    //  font-size: @base-font-size*3;
-    @media @mq-medium {
-        font-size: @base-font-size*3;
+    font-size: 4em;
+    @media @bs3-xs {
+        font-size: 2em;
     }
-    @media @mq-large {
-        font-size: @base-font-size*3;
+    @media @bs3-sm {
+        font-size: 3em;
     }
-    @media @mq-xlarge {
-        font-size: @base-font-size*5;
-    }
-    @media @mq-xxlarge {
-        font-size: @base-font-size*8;
+    @media @bs3-md {
+        font-size: 4em;
     }
 }
 
 h2 {
-    //  font-size: @base-font-size*3;
-    font-size: @base-font-size*2;
-    @media @mq-medium {
-        font-size: @base-font-size*2;
+    font-size: 3em;
+    @media @bs3-xs {
+        font-size: 1.5em;
     }
-    @media @mq-large {
-        font-size: @base-font-size*2.8;
+    @media @bs3-sm {
+        font-size: 2em;
     }
-    @media @mq-xlarge {
-        font-size: @base-font-size*3.5;
-    }
-    @media @mq-xxlarge {
-        font-size: @base-font-size*4;
+    @media @bs3-md {
+        font-size: 3em;
     }
 }
 
 p {
     /* Spicy jalapeno chick: */
-    font-family: Roboto-Regular;
-    font-size: 20px;
+    font-family: Roboto;
+    font-size: 1em;
     color: #000000;
     letter-spacing: 1.6px;
     line-height: 36px;
-    font-size: @base-font-size*1;
-    @media @mq-medium {
-        font-size: @base-font-size*1;
+    @media @bs3-xs {
+        font-size: 0.9em;
     }
-    @media @mq-large {
-        font-size: @base-font-size*1;
-    }
-    @media @mq-xlarge {
-        font-size: @base-font-size*1;
-    }
-    @media @mq-xxlarge {
-        font-size: @base-font-size*1.5;
+    @media @bs3-md {
+        font-size: 1em;
     }
 }
 
@@ -127,14 +101,13 @@ a:hover {
 .middle {
     .vertical-align()
 }
-// .fill{
-//   height: 100%;
-// }
 
 #interaction {
     background-color: black;
+    padding: 15px 0px;
 
     .interaction-gif {
+      padding: 15px;
         img {
             width: 100%;
         }
@@ -172,10 +145,18 @@ a:hover {
     column-count: 2;
     column-gap: 15px;
     column-fill: auto;
+    @media @bs3-xs {
+        column-count: 1;
+    }
+    @media @bs3-sm {
+        column-count: 2;
+    }
+    @media @bs3-md {}
 }
 
 .card {
     display: inline-block;
+    width: 100%;
 
     &.card-6 {}
 
@@ -185,70 +166,118 @@ a:hover {
 #hero {
     text-align: center;
 }
+#video{
+  .videoContainer{
+    position: relative;
+
+    .overlay-container{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
+  }
+
+
+}
+
 
 .playOverlay {
-    position: absolute;
     background-color: yellow;
-    width: 100px;
-    height: 100px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    padding: 30px 38px;
     opacity: 1;
+    @media @bs3-xs {
+        width: 40px;
+        height: 40px;
+        padding: 7px 11px;
 
-    &.playing{
-      opacity: 0;
+        .fa {
+            font-size: 2em !important;
+        }
+    }
+    @media @bs3-sm {
+        width: 50px;
+        height: 50px;
+        padding: 13px 15px;
+        .fa {
+            font-size: 2em !important;
+        }
+    }
+    @media @bs3-md {
+        width: 100px;
+        height: 100px;
+        padding: 23px 32px;
+        .fa {
+            font-size: 4em !important;
+        }
     }
 
+    &.playing {
+        opacity: 0;
+    }
 }
 
-.overlay{
-  .vertical-align();
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+.overlay {
+    .vertical-align();
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
-.contacts{
-  padding: 20px;
-  /* If you are intereste: */
-  font-family: RobotoMono-Medium;
-  font-size: 34px;
-  color: #FFFFFF;
-  letter-spacing: 0;
+.contacts {
+    padding: 20px;
+    /* If you are intereste: */
+    font-family: RobotoMono-Medium;
+    font-size: 34px;
+    color: #FFFFFF;
+    letter-spacing: 0;
 }
 
-.highlight-yellow{
-  color: yellow;
+.highlight-yellow {
+    color: yellow;
 }
 
-.bg-black{
-  background-color: #000;
-  color: white;
+.bg-black {
+    background-color: #000;
+    color: white;
 }
 
-.claim{
-  text-align: center;
-  /* a project by: */
-font-family: RobotoMono-Light;
-font-size: 15px;
-color: #000000;
-letter-spacing: 0;
+.claim {
+    text-align: center;
+    /* a project by: */
+    font-family: RobotoMono-Light;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 0;
 }
 
-.owl-nav{
+.owl-nav {
+    width: 100%;
+    color: yellow;
+    position: absolute;
+    top: 50%;
+
+    .owl-prev {
+        float: left;
+    }
+
+    .owl-next {
+        float: right;
+    }
+}
+
+section{
+  height: 100%;
   width: 100%;
-color: yellow;
-position: absolute;
-top: 50%;
-  .owl-prev{
-    float: left;
-  }
-  .owl-next{
-    float: right;
-  }
+  position: relative;
+}
+
+body{
+  height: 100%;
 }

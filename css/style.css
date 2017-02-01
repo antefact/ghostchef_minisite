@@ -6768,77 +6768,19 @@ h4 a:hover,
 h5 a:hover {
   text-decoration: none;
 }
-@media (min-width: 64em) {
-  h1 {
-    font-size: 3em;
-  }
-}
-@media (min-width: 85.375em) {
-  h1 {
-    font-size: 3em;
-  }
-}
-@media (min-width: 120em) {
-  h1 {
-    font-size: 5em;
-  }
-}
-@media (min-width: 160em) {
-  h1 {
-    font-size: 8em;
-  }
-}
-h2 {
+h1 {
   font-size: 2em;
 }
-@media (min-width: 64em) {
-  h2 {
-    font-size: 2em;
-  }
-}
-@media (min-width: 85.375em) {
-  h2 {
-    font-size: 2.8em;
-  }
-}
-@media (min-width: 120em) {
-  h2 {
-    font-size: 3.5em;
-  }
-}
-@media (min-width: 160em) {
-  h2 {
-    font-size: 4em;
-  }
+h2 {
+  font-size: 1.5em;
 }
 p {
   /* Spicy jalapeno chick: */
-  font-family: Roboto-Regular;
-  font-size: 20px;
+  font-family: Roboto;
+  font-size: 0.9em;
   color: #000000;
   letter-spacing: 1.6px;
   line-height: 36px;
-  font-size: 1em;
-}
-@media (min-width: 64em) {
-  p {
-    font-size: 1em;
-  }
-}
-@media (min-width: 85.375em) {
-  p {
-    font-size: 1em;
-  }
-}
-@media (min-width: 120em) {
-  p {
-    font-size: 1em;
-  }
-}
-@media (min-width: 160em) {
-  p {
-    font-size: 1.5em;
-  }
 }
 a:focus,
 a:hover {
@@ -6940,4 +6882,16 @@ a:hover {
   font-size: 15px;
   color: #000000;
   letter-spacing: 0;
+}
+.owl-nav {
+  width: 100%;
+  color: yellow;
+  position: absolute;
+  top: 50%;
+}
+.owl-nav .owl-prev {
+  float: left;
+}
+.owl-nav .owl-next {
+  float: right;
 }

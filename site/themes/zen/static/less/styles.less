@@ -11,6 +11,63 @@
 /*  For Large devices Desktops */
 @navbar-height: 70px;
 
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-style: normal;
+  src: url('../fonts/Roboto-100/Roboto-100.eot');
+  src: url('../fonts/Roboto-100/Roboto-100.eot?#iefix') format('embedded-opentype'),
+       local('Roboto Thin'),
+       local('Roboto-100'),
+       url('../fonts/Roboto-100/Roboto-100.woff2') format('woff2'),
+       url('../fonts/Roboto-100/Roboto-100.woff') format('woff'),
+       url('../fonts/Roboto-100/Roboto-100.ttf') format('truetype'),
+       url('../fonts/Roboto-100/Roboto-100.svg#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Roboto-regular/Roboto-regular.eot');
+  src: url('../fonts/Roboto-regular/Roboto-regular.eot?#iefix') format('embedded-opentype'),
+       local('Roboto'),
+       local('Roboto-regular'),
+       url('../fonts/Roboto-regular/Roboto-regular.woff2') format('woff2'),
+       url('../fonts/Roboto-regular/Roboto-regular.woff') format('woff'),
+       url('../fonts/Roboto-regular/Roboto-regular.ttf') format('truetype'),
+       url('../fonts/Roboto-regular/Roboto-regular.svg#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-weight: 100;
+  font-style: normal;
+  src: url('../fonts/Roboto-Mono-100/Roboto-Mono-100.eot');
+  src: url('../fonts/Roboto-Mono-100/Roboto-Mono-100.eot?#iefix') format('embedded-opentype'),
+       local('Roboto Mono Thin'),
+       local('Roboto-Mono-100'),
+       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.woff2') format('woff2'),
+       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.woff') format('woff'),
+       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.ttf') format('truetype'),
+       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.svg#RobotoMono') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.eot');
+  src: url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.eot?#iefix') format('embedded-opentype'),
+       local('Roboto Mono'),
+       local('Roboto-Mono-regular'),
+       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.woff2') format('woff2'),
+       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.woff') format('woff'),
+       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.ttf') format('truetype'),
+       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.svg#RobotoMono') format('svg');
+}
+
 .container {
     max-width: 970px;
 }
@@ -37,7 +94,7 @@
 html {
     height: 100%;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: roboto, sans-serif;
 }
 
 h1,
@@ -45,7 +102,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono';
     text-align: center;
     a:focus,
     a:hover {
@@ -82,7 +139,7 @@ h2 {
 
 p {
     /* Spicy jalapeno chick: */
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 1em;
     color: #000000;
     letter-spacing: 1.6px;
@@ -127,7 +184,7 @@ a:hover {
             span {
                 vertical-align: bottom;
                 /* Follow along with so Copy 2: */
-                font-family: Roboto-Regular;
+                font-family: 'Roboto';
                 font-size: 20px;
                 color: #000000;
                 letter-spacing: 1.6px;
@@ -271,7 +328,7 @@ a:hover {
 .claim {
     text-align: center;
     /* a project by: */
-    font-family: RobotoMono-Light;
+    font-family: 'Roboto Mono';
     font-size: 15px;
     color: #000000;
     letter-spacing: 0;

@@ -49,13 +49,13 @@ theme ="zen"
 
     [[params.interactionDetail.gifs]]
     name = "globalGIf"
-    fileName = "gif5.gif"
+    fileName = "learning.gif"
     caption= "Teach the sysyem your style and record your personal culinary identity."
     width=6
 
     [[params.interactionDetail.gifs]]
     name = "globalGIf"
-    fileName = "gif3.gif"
+    fileName = "extensions.gif"
     caption= "Access premium features like plating and task management."
     width=6
 

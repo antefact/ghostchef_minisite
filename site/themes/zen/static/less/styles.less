@@ -11,6 +11,8 @@
 /*  For Large devices Desktops */
 @navbar-height: 70px;
 
+@dark-grey: rgb(65, 71, 74)
+
 
 @font-face {
   font-family: 'Roboto';
@@ -180,7 +182,7 @@ padding: 50px 0px;
 
             span {
               font-family: 'Roboto mono';
-              font-size: 15px;
+              font-size: 1em;
               color: #fff;
               padding: 20px 10px 10px 0;
               display: inline-block;
@@ -312,7 +314,7 @@ padding: 50px 0px;
 }
 
 .bg-black {
-    background-color: #000;
+    background-color: rgb(65, 71, 74);
     color: white;
 }
 
@@ -331,6 +333,7 @@ padding: 50px 0px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    padding: 0 10px;
 
     .owl-prev {
         float: left;
@@ -394,4 +397,7 @@ body{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+.owl-carousel .owl-item img {
 }

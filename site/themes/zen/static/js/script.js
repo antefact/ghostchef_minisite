@@ -41,10 +41,27 @@ $(document).ready(function() {
 
     $("#play-button").click(function() {
         if ($("#main-video").get(0).paused == true) {
-            $("#main-video").get(0).play();
+            playMovie()
         } else {
             $("#main-video").get(0).pause();
         }
     });
+
+    // In browsers that don’t yet support this functionality,
+// playPromise won’t be defined.
+
+  function playMovie(){
+    var playPromise=$("#main-video").get(0).play();
+
+  if (playPromise !== undefined) {
+    playPromise.then(function() {
+      // Automatic playback started!
+    }).catch(function(error) {
+      // Automatic playback failed.
+      // Show a UI element to let the user manually start playback.
+      console.log(error);
+    });
+  }
+}
 
 });

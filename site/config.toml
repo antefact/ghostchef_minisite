@@ -43,7 +43,7 @@ theme ="zen"
 
     [[params.interactionDetail.gifs]]
     name = "globalGIf"
-    fileName = "gif4.gif"
+    fileName = "sliders.gif"
     caption= "Tweak the intelligence behaviour by adjusting each chef specific settings."
     width=6
 

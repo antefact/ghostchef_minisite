@@ -3,14 +3,15 @@
 
         <div class="card card-{{ .Site.Params.interactionDetail.headerGif.width }}">
             <div class="interaction-gif">
+              <div class="caption">
+                  <span>
+                      {{.Site.Params.interactionDetail.headerGif.caption}}
+                  </span>
+              </div>
                 <figure class="img-responsive">
                     <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{.Site.Params.interactionDetail.headerGif.fileName}}"/>
                 </figure>
-                <div class="caption">
-                    <span>
-                        {{.Site.Params.interactionDetail.headerGif.caption}}
-                    </span>
-                </div>
+
             </div>
         </div>
 
@@ -18,14 +19,15 @@
             {{range .Site.Params.interactionDetail.gifs}}
                 <div class="card card-{{ .width }}">
                     <div class="interaction-gif">
+                      <div class="caption">
+                          <span>
+                              {{.caption}}
+                          </span>
+                      </div>
                         <figure class="img-responsive">
                             <img class="img-responsive" src="{{.Site.BaseURL}}img/{{.fileName}}"/>
                         </figure>
-                        <div class="caption">
-                            <span>
-                                {{.caption}}
-                            </span>
-                        </div>
+
                     </div>
                 </div>
             {{end}}

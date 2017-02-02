@@ -166,12 +166,12 @@ a:hover {
 }
 
 #interaction {
-    background-color: black;
-    padding: 15px 0px;
-
+    background-color: rgb(65, 71, 74);    padding: 15px 0px;
+padding: 50px 0px;
     .interaction-gif {
-      padding: 15px;
-        img {
+      border: 2px solid yellow;
+      margin-top: 8px;
+              img {
             width: 100%;
         }
 
@@ -191,7 +191,7 @@ a:hover {
                 line-height: 36px;
                 bottom: 5px;
                 margin: 0 auto;
-                padding: 0 5px;
+                padding: 0 20px;
                 position: absolute;
             }
         }
@@ -375,4 +375,32 @@ section{
 
 body{
   height: 100%;
+}
+
+.ghostchef{
+  margin-top: 20px;
+  width: 90%;
+}
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

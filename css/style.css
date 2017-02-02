@@ -9261,6 +9261,12 @@ a:hover {
   display: inline-block;
   width: 100%;
 }
+.card.card-6 {
+  padding: 1% 4%;
+}
+.card.card-12 {
+  padding: 1% 2%;
+}
 #hero {
   text-align: center;
   height: 100% !important;

@@ -24,14 +24,12 @@ $(window).on('load',function(){
   });
 
 
-
 $(document).ready(function() {
 
     // Video
 
     $("#main-video").get(0).addEventListener('play', toggleBigButton, false);
     $("#main-video").get(0).addEventListener('pause', toggleBigButton, false);
-
 
     function toggleBigButton() {
         if ($("#main-video").get(0).paused == true) {

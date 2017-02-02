@@ -30,7 +30,7 @@ theme ="zen"
   [params.interactionDetail]
     [params.interactionDetail.headerGif]
     name = "globalGIf"
-    fileName = "gif_top.gif"
+    fileName = "topGif.gif"
     caption= "Just start interacting with ghostchef by writing in something. Feel free to start from an ingredient, a recipe, a combination or even an emotion."
     width=12
 

@@ -9085,6 +9085,9 @@ button.close {
 /*  For Small devices Tablets*/
 /*  For Medium devices Desktops */
 /*  For Large devices Desktops */
+@dark-grey : rgb(65, 71, 74)
+
+
 @font-face {
   font-family: 'Roboto';
   font-weight: 100;
@@ -9228,7 +9231,7 @@ a:hover {
 }
 #interaction .interaction-gif .caption span {
   font-family: 'Roboto mono';
-  font-size: 15px;
+  font-size: 1em;
   color: #fff;
   padding: 20px 10px 10px 0;
   display: inline-block;
@@ -9345,7 +9348,7 @@ a:hover {
   color: yellow;
 }
 .bg-black {
-  background-color: #000;
+  background-color: #41474a;
   color: white;
 }
 .claim {
@@ -9362,6 +9365,7 @@ a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  padding: 0 10px;
 }
 .owl-nav .owl-prev {
   float: left;

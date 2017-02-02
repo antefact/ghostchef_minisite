@@ -9220,30 +9220,18 @@ a:hover {
   padding: 50px 0px;
 }
 #interaction .interaction-gif {
-  border: 2px solid yellow;
   margin-top: 8px;
 }
 #interaction .interaction-gif img {
   width: 100%;
-}
-#interaction .interaction-gif .caption {
-  vertical-align: bottom;
-  position: relative;
-  bottom: 10px;
-  left: 10px;
+  border: 2px solid yellow;
 }
 #interaction .interaction-gif .caption span {
-  vertical-align: bottom;
-  /* Follow along with so Copy 2: */
-  font-family: 'Roboto';
-  font-size: 20px;
-  color: #000000;
-  letter-spacing: 1.6px;
-  line-height: 36px;
-  bottom: 5px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: absolute;
+  font-family: 'Roboto mono';
+  font-size: 15px;
+  color: #fff;
+  padding: 20px 10px 10px 0;
+  display: inline-block;
 }
 .columns {
   -webkit-column-count: 2;

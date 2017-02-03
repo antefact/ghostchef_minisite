@@ -9227,7 +9227,6 @@ a:hover {
 }
 #interaction .interaction-gif img {
   width: 100%;
-  border: 2px solid yellow;
 }
 #interaction .interaction-gif .caption span {
   font-family: 'Roboto mono';
@@ -9238,10 +9237,13 @@ a:hover {
 }
 .columns {
   -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
+  -webkit-column-gap: 15px;
   -webkit-column-fill: auto;
-  -moz-column-count: 3;
-  -moz-column-gap: 10px;
+  -webkit-column-width: 200px;
+  -moz-column-width: 200px;
+  column-width: 200px;
+  -moz-column-count: 2;
+  -moz-column-gap: 15px;
   -moz-column-fill: auto;
   column-count: 2;
   column-gap: 15px;
@@ -9250,11 +9252,15 @@ a:hover {
 @media only screen and (max-width:767px) {
   .columns {
     column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
   }
 }
 @media only screen and (min-width:768px) {
   .columns {
     column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
   }
 }
 .card {
@@ -9330,6 +9336,10 @@ a:hover {
   padding: 20px;
   color: #FFFFFF;
   letter-spacing: 0;
+  font-family: 'Roboto mono';
+  font-size: 1em;
+  text-align: center;
+  margin-top: 10%;
 }
 .overlay-container {
   width: 100%;

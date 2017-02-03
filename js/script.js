@@ -30,7 +30,6 @@ $(document).ready(function() {
 
     var videoElem = document.getElementById("main-video");
 
-
     $("#main-video").get(0).addEventListener('play', toggleBigButton, false);
     $("#main-video").get(0).addEventListener('pause', toggleBigButton, false);
 
@@ -43,17 +42,10 @@ $(document).ready(function() {
     }
 
     $("#play-button").click(function() {
-
-
-
-
         if (videoElem.paused == true) {
+          //if the video is played from small device send it to fullscreen
             if ($(window).width() > 739) {
-                //Add your javascript for large screens here
             } else {
-                //Add your javascript for small screens here
-
-
                 if (videoElem.requestFullscreen) {
                   videoElem.requestFullscreen();
                 } else if (videoElem.mozRequestFullScreen) {
@@ -61,10 +53,8 @@ $(document).ready(function() {
                 } else if (videoElem.webkitRequestFullscreen) {
                   videoElem.webkitRequestFullscreen(); // Chrome and Safari
                 }
-
             }
             playMovie()
-
         } else {
             videoElem.pause();
         }
@@ -75,10 +65,7 @@ $(document).ready(function() {
 
     function playMovie() {
         var playPromise = videoElem.play();
-
         if (playPromise !== undefined) {
-
-
             playPromise.then(function() {
                 // Automatic playback started!
             }).catch(function(error) {

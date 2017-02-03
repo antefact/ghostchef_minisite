@@ -62,7 +62,7 @@ theme ="zen"
     [[params.credits]]
     name = "bxb"
     logo = "bxb_logo.png"
-    link= "http://www.bitsandbites.com"
+    link= "http://www.bitsxbites.com"
     [[params.credits]]
     name = "Mill"
     logo = "mill-logo.png"

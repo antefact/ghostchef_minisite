@@ -43,6 +43,36 @@
 }
 
 @font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: light;
+  src: url('/fonts/Roboto-300/Roboto-300.eot');
+  src: url('/fonts/Roboto-300/Roboto-300.eot?#iefix') format('embedded-opentype'),
+       local('Roboto Light'),
+       local('Roboto-300'),
+       url('/fonts/Roboto-300/Roboto-300.woff2') format('woff2'),
+       url('/fonts/Roboto-300/Roboto-300.woff') format('woff'),
+       url('/fonts/Roboto-300/Roboto-300.ttf') format('truetype'),
+       url('/fonts/Roboto-300/Roboto-300.svg#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: bold;
+  src: url('/fonts/Roboto-700/Roboto-700.eot');
+  src: url('/fonts/Roboto-700/Roboto-700.eot?#iefix') format('embedded-opentype'),
+       local('Roboto Bold'),
+       local('Roboto-700'),
+       url('/fonts/Roboto-700/Roboto-700.woff2') format('woff2'),
+       url('/fonts/Roboto-700/Roboto-700.woff') format('woff'),
+       url('/fonts/Roboto-700/Roboto-700.ttf') format('truetype'),
+       url('/fonts/Roboto-700/Roboto-700.svg#Roboto') format('svg');
+}
+
+
+
+@font-face {
   font-family: 'Roboto Mono';
   font-weight: 100;
   font-style: normal;
@@ -119,38 +149,46 @@ h1 {
         font-size: 2em;
     }
     @media @bs3-sm {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     @media @bs3-md {
-        font-size: 4em;
+        font-size: 3em;
     }
 }
 
 h2 {
-    font-size: 3em;
+    font-family: 'Roboto';
+    font-weight: 100;
+    letter-spacing: 1.5px;
+
+    font-size: 1.7em;
+
     @media @bs3-xs {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     @media @bs3-sm {
-        font-size: 2em;
+        font-size: 1.3em;
     }
     @media @bs3-md {
-        font-size: 3em;
+        font-size: 1.7em;
     }
 }
 
 p {
     /* Spicy jalapeno chick: */
-    font-family: 'Roboto';
-    font-size: 1em;
+    font-family: 'Open Sans';
+    font-size: 1.2em;
     color: #000000;
-    letter-spacing: 1.6px;
-    line-height: 36px;
+    line-height: 1.5em;
+    font-weight: 100;
+
     @media @bs3-xs {
-        font-size: 0.9em;
+        font-size: 1em;
+        line-height: 1.8em;
+
     }
     @media @bs3-md {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
@@ -242,6 +280,10 @@ padding: 50px 0px;
     .middle{
       transform:translateY(-50%);
     }
+
+    h2{
+      margin-top: 0px;
+    }
 }
 
 #video{
@@ -301,13 +343,10 @@ padding: 50px 0px;
   .contacts {
       padding: 20px;
       color: #FFFFFF;
-      letter-spacing: 0;
 
     font-family: 'Roboto mono';
     font-size: 1em;
     text-align: center;
-    margin-top: 10%;
-
   }
 }
 

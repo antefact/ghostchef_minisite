@@ -15,16 +15,10 @@ theme ="zen"
 
   [params.processGallery]
     photos=[
-    "centaurkitchen.png",
-    "centaurkitchen2.png",
-    "centaurkitchen.png",
-    "centaurkitchen2.png",
-    "centaurkitchen.png",
-    "centaurkitchen2.png",
+    "sketching.jpg",
+    "tasks.jpg",
     "centaurkitchen.png",
     "centaurkitchen2.png"
-
-
     ]
 
   [params.interactionDetail]

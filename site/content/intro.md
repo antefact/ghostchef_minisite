@@ -2,6 +2,8 @@
 title = "intro"
 +++
 
-Spicy jalapeno chicken exercitation kielbasa laboris. Duis kevin aliquip, reprehenderit excepteur tempor nisi qui non. Swine ribeye reprehenderit occaecat, aute et qui burgdoggen. Ut consequat pig short ribs jerky non sunt ribeye. Esse flank shoulder leberkas cupim eiusmod. Ham turkey prosciutto landjaeger in lorem. Doner exercitation ea, bresaola culpa deserunt dolore capicola short ribs shankle sint filet mignon.
+**What happens when you bring machine intelligence in an actual kitchen? What role will it have? What role should it have?**
 
-In non cillum incididunt beef ribs. Meatball corned beef beef ribs tongue, nisi filet mignon turkey officia short loin pork belly. Nisi dolore prosciutto turducken in duis esse. Brisket non do, in exercitation dolore tri-tip fugiat. Ad leberkas ut pork chop consectetur biltong et dolore minim beef pork bresaola. Sausage aliquip tongue sirloin t-bone aute commodo pork loin pancetta venisson pork enim shoulder.
+While the first image we have in our head when we talk about technology and artificial intelligence is probably a restaurant full of  robot arms chopping food or some sort of recipe generators or a bot, we believe that there are a lot more interesting scenarios to be explored when thinking deeply about new relationships, roles and experiences that will emerge by having an intelligent agent or system on the side of people.
+
+We started this project by digging in the kitchen world. We worked with Mill and followed all the steps taken in a professional kitchen before and after the actual cooking and serving of a meal: from deciding the menu, sketching the plates, dividing the task, and eventually spending a full day in a real kitchen cooking a 4-course menu for 60 people.

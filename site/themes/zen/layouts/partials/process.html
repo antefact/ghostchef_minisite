@@ -3,7 +3,7 @@
     <div class="owl-carousel">
         {{range .Site.Params.processGallery.photos}}
 
-                <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{.}}"/>
+                <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{.}}"/>
 
         {{end}}
     </div>

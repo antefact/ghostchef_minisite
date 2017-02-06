@@ -9348,6 +9348,9 @@ a:hover {
 #video .playOverlay.playing {
   opacity: 0;
 }
+#contact .middle {
+  z-index: -100;
+}
 @media only screen and (max-width:767px) {
   #contact .overlay-container {
     position: relative;

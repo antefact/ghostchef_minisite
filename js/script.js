@@ -21,7 +21,13 @@ $(window).on('load', function() {
             "<i class='fa fa-chevron-right fa-2x' aria-hidden='true'></i>"
         ],
     });
-});
+    AOS.init({
+          offset: 200,
+          duration: 600,
+          easing: 'ease-in-sine',
+          delay: 100,
+        });
+      });
 
 
 $(document).ready(function() {

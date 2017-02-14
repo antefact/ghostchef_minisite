@@ -2,20 +2,20 @@
     <div class="container middle ">
         <div class="row ">
 
-          <div class="col-md-9">
+            <div class="col-md-9">
 
-            {{ range .Data.Pages }}
-                {{if and (eq .Title "intro") }}
+                {{ range .Data.Pages }}
+                    {{if and (eq .Title "intro") }}
 
-                <h3>
-                  {{.Params.titlesection}}
-                </h3>
+                        <h3>
+                            {{.Params.titlesection}}
+                        </h3>
 
-                  {{.Content}}
-                {{end}}
-            {{ end }}
+                        {{.Content}}
+                    {{end}}
+                {{ end }}
 
-          </div>
+            </div>
 
         </div>
     </div>

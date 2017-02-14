@@ -6,6 +6,9 @@
 
             {{ range .Data.Pages }}
                 {{if and (eq .Title "conclusion") }}
+                <h3>
+                    {{.Params.titlesection}}
+                </h3>
                     {{.Content}}
                 {{end}}
             {{ end }}

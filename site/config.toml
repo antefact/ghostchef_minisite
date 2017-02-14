@@ -14,12 +14,26 @@ theme ="bxb"
 	subtitle = "A research on generative tools and food"
 
   [params.processGallery]
-    photos=[
-    "sketching.jpg",
-    "tasks.jpg",
-    "centaurkitchen.png",
-    "centaurkitchen2.png"
-    ]
+    [[params.processGallery.photos]]
+    img = "sketching.jpg"
+    captionTitle = "sketching Plates"
+    captionDescription = "Chef use to design plates on paper"
+
+    [[params.processGallery.photos]]
+    img = "tasks.jpg"
+    captionTitle = "task division"
+    captionDescription = "every recipe is divided in microtasks,"
+
+    [[params.processGallery.photos]]
+    img = "centaurkitchen.png"
+    captionTitle = "the centaur kitchen"
+    captionDescription = ""
+
+    [[params.processGallery.photos]]
+    img = "centaurkitchen2.png"
+    captionTitle = "# fried cicken"
+    captionDescription = "deep fried chicken served with bacon flavoured chips"
+
 
   [params.interactionDetail]
     [params.interactionDetail.headerGif]
@@ -61,10 +75,6 @@ theme ="bxb"
     name = "Mill"
     logo = "mill-logo.png"
     link= "http://www.mill-intelligence.com"
-    [[params.credits]]
-    name = "Antefact"
-    logo = "antefact_logo.png"
-    link= "http://www.antefact.com"
 
 
   # Navigation

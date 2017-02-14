@@ -1,7 +1,6 @@
 +++
 title = "concept"
-titleSection = "interacting with a ghostchef"
-
+titlesection = "interact in a “natural way” with an artificial 'foodie' intelligence"
 +++
 Most of the ‘intelligent’ assistants that we see today or in many visions of the future are in form of bots that ‘assist’ you or even take over the actions of cooking for you. It almost feels like they all try to be at the centre of the attention. What we were very interested in was to look at those more subtle ways in which intelligence could fit and enhance a chef’s experience, and rather than solving and simplifying it would be aimed at becoming a support and a collaborator, an enhancer of the ability rather than a surrogate.
 

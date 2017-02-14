@@ -1,0 +1,17 @@
+<section id="intro" data-aos="fade-up">
+    <div class="container middle ">
+        <div class="row ">
+
+          <div class="col-md-9">
+
+            {{ range .Data.Pages }}
+                {{if and (eq .Title "intro") }}
+                    {{.Content}}
+                {{end}}
+            {{ end }}
+
+          </div>
+
+        </div>
+    </div>
+</section>

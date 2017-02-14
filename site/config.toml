@@ -1,7 +1,7 @@
 baseurl = "https://antefact.github.io/ghostchef_minisite/"
 languageCode = "en-us"
 title = "Ghost Chef 👻🍳"
-theme ="zen"
+theme ="bxb"
 
 [params]
 

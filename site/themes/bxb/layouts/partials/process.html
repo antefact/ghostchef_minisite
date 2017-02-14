@@ -1,0 +1,11 @@
+<section id="progress" data-aos="fade-up">
+
+    <div class="owl-carousel">
+        {{range .Site.Params.processGallery.photos}}
+
+                <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{.}}"/>
+
+        {{end}}
+    </div>
+
+</section>

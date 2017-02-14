@@ -1,0 +1,36 @@
+<section id="interaction" class="section-big" data-aos="fade-up">
+    <div class="container">
+
+        <div class="card card-{{ .Site.Params.interactionDetail.headerGif.width }}">
+            <div class="interaction-gif">
+              <div class="caption">
+                  <span>
+                      {{.Site.Params.interactionDetail.headerGif.caption}}
+                  </span>
+              </div>
+                <figure class="img-responsive">
+                    <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{.Site.Params.interactionDetail.headerGif.fileName}}"/>
+                </figure>
+
+            </div>
+        </div>
+
+        <div class="columns">
+            {{range .Site.Params.interactionDetail.gifs}}
+                <div class="card card-{{ .width }}">
+                    <div class="interaction-gif">
+                      <div class="caption">
+                          <span>
+                              {{.caption}}
+                          </span>
+                      </div>
+                        <figure class="img-responsive">
+                            <img class="img-responsive" src="{{.Site.BaseURL}}img/{{.fileName}}"/>
+                        </figure>
+
+                    </div>
+                </div>
+            {{end}}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,472 @@
+@import "bootstrap/bootstrap.less";
+@import "font-awesome/less/font-awesome.less";
+
+@bs3-xs: ~"only screen and (max-width:767px)";
+/*  For Phones*/
+@bs3-sm: ~"only screen and (min-width:@{screen-sm-min})";
+/*  For Small devices Tablets*/
+@bs3-md: ~"only screen and (min-width:@{screen-md-min})";
+/*  For Medium devices Desktops */
+@bs3-lg: ~"only screen and (min-width:@{screen-lg-min})";
+/*  For Large devices Desktops */
+@navbar-height: 70px;
+
+@dark-grey: rgb(65, 71, 74)
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-style: normal;
+  src: url('../fonts/Roboto-100/Roboto-100.eot');
+  src: url('../fonts/Roboto-100/Roboto-100.eot?#iefix') format('embedded-opentype'),
+       local('Roboto Thin'),
+       local('Roboto-100'),
+       url('../fonts/Roboto-100/Roboto-100.woff2') format('woff2'),
+       url('../fonts/Roboto-100/Roboto-100.woff') format('woff'),
+       url('../fonts/Roboto-100/Roboto-100.ttf') format('truetype'),
+       url('../fonts/Roboto-100/Roboto-100.svg#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Roboto-regular/Roboto-regular.eot');
+  src: url('../fonts/Roboto-regular/Roboto-regular.eot?#iefix') format('embedded-opentype'),
+       local('Roboto'),
+       local('Roboto-regular'),
+       url('../fonts/Roboto-regular/Roboto-regular.woff2') format('woff2'),
+       url('../fonts/Roboto-regular/Roboto-regular.woff') format('woff'),
+       url('../fonts/Roboto-regular/Roboto-regular.ttf') format('truetype'),
+       url('../fonts/Roboto-regular/Roboto-regular.svg#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: light;
+  src: url('../fonts/Roboto-300/Roboto-300.eot');
+  src: url('../fonts/Roboto-300/Roboto-300.eot?#iefix') format('embedded-opentype'),
+       local('Roboto Light'),
+       local('Roboto-300'),
+       url('../fonts/Roboto-300/Roboto-300.woff2') format('woff2'),
+       url('../fonts/Roboto-300/Roboto-300.woff') format('woff'),
+       url('../fonts/Roboto-300/Roboto-300.ttf') format('truetype'),
+       url('../fonts/Roboto-300/Roboto-300.svg#Roboto') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: bold;
+  src: url('../fonts/Roboto-700/Roboto-700.eot');
+  src: url('../fonts/Roboto-700/Roboto-700.eot?#iefix') format('embedded-opentype'),
+       local('Roboto Bold'),
+       local('Roboto-700'),
+       url('../fonts/Roboto-700/Roboto-700.woff2') format('woff2'),
+       url('../fonts/Roboto-700/Roboto-700.woff') format('woff'),
+       url('../fonts/Roboto-700/Roboto-700.ttf') format('truetype'),
+       url('../fonts/Roboto-700/Roboto-700.svg#Roboto') format('svg');
+}
+
+
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-weight: 100;
+  font-style: normal;
+  src: url('../fonts/Roboto-Mono-100/Roboto-Mono-100.eot');
+  src: url('../fonts/Roboto-Mono-100/Roboto-Mono-100.eot?#iefix') format('embedded-opentype'),
+       local('Roboto Mono Thin'),
+       local('Roboto-Mono-100'),
+       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.woff2') format('woff2'),
+       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.woff') format('woff'),
+       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.ttf') format('truetype'),
+       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.svg#RobotoMono') format('svg');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.eot');
+  src: url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.eot?#iefix') format('embedded-opentype'),
+       local('Roboto Mono'),
+       local('Roboto-Mono-regular'),
+       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.woff2') format('woff2'),
+       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.woff') format('woff'),
+       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.ttf') format('truetype'),
+       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.svg#RobotoMono') format('svg');
+}
+
+.container {
+    max-width: 970px;
+}
+
+.transition (@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -ms-transition: @transition;
+    -o-transition: @transition;
+}
+
+.vertical-align() {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.element p {
+    @include vertical-align();
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto Mono';
+    text-align: center;
+    a:focus,
+    a:hover {
+        text-decoration: none;
+    }
+    .transition( font-size 1s);
+}
+
+h1 {
+    font-size: 4em;
+    @media @bs3-xs {
+        font-size: 2em;
+    }
+    @media @bs3-sm {
+        font-size: 2.5em;
+    }
+    @media @bs3-md {
+        font-size: 3em;
+    }
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-weight: 100;
+    letter-spacing: 1.5px;
+
+    font-size: 1.7em;
+
+    @media @bs3-xs {
+        font-size: 1.2em;
+    }
+    @media @bs3-sm {
+        font-size: 1.3em;
+    }
+    @media @bs3-md {
+        font-size: 1.7em;
+    }
+}
+
+p {
+    /* Spicy jalapeno chick: */
+    font-family: 'Open Sans';
+    font-size: 1.2em;
+    color: #000000;
+    line-height: 1.5em;
+    font-weight: 100;
+
+    @media @bs3-xs {
+        font-size: 1em;
+        line-height: 1.8em;
+
+    }
+    @media @bs3-md {
+        font-size: 1.2em;
+    }
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+.middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#interaction {
+    background-color: rgb(65, 71, 74);    padding: 15px 0px;
+padding: 50px 0px;
+    .interaction-gif {
+      margin-top: 8px;
+              img {
+            width: 100%;
+            // border: 2px solid yellow;
+
+        }
+
+        .caption {
+
+            span {
+              font-family: 'Roboto mono';
+              font-size: 1em;
+              color: #fff;
+              padding: 20px 10px 10px 0;
+              display: inline-block;
+            }
+        }
+    }
+}
+
+.columns {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 15px;
+    -webkit-column-fill: auto;
+
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+         column-width: 200px;
+
+    -moz-column-count: 2;
+    -moz-column-gap: 15px;
+    -moz-column-fill: auto;
+    column-count: 2;
+    column-gap: 15px;
+    column-fill: auto;
+
+    @media @bs3-xs {
+        column-count: 1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+
+    }
+    @media @bs3-sm {
+      column-count: 2;
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+    }
+    @media @bs3-md {}
+}
+
+.card {
+    display: inline-block;
+    width: 100%;
+
+    &.card-6 {
+      padding: 1% 4%;
+    }
+
+    &.card-12 {
+      padding: 1% 2%;
+
+    }
+}
+
+#hero {
+    text-align: center;
+    height: 100% !important;
+
+    .middle{
+      transform:translateY(-50%);
+    }
+
+    h2{
+      margin-top: 0px;
+    }
+}
+
+#video{
+  .videoContainer{
+    position: relative;
+    .middle{
+      transform:translateY(-50%) translateX(-50%);
+
+    }
+  }
+
+  .playOverlay {
+      background-color: yellow;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      opacity: 1;
+      @media @bs3-xs {
+          width: 40px;
+          height: 40px;
+          padding: 7px 11px;
+
+          .fa {
+              font-size: 2em !important;
+          }
+      }
+      @media @bs3-sm {
+          width: 50px;
+          height: 50px;
+          padding: 13px 15px;
+          .fa {
+              font-size: 2em !important;
+          }
+      }
+      @media @bs3-md {
+          width: 100px;
+          height: 100px;
+          padding: 23px 32px;
+          .fa {
+              font-size: 4em !important;
+          }
+      }
+
+      &.playing {
+          opacity: 0;
+      }
+  }
+}
+
+#contact{
+
+  .middle{
+    z-index: -100;
+  }
+  .overlay-container{
+    @media @bs3-xs {
+      position: relative;
+    }
+  }
+  .contacts {
+      padding: 20px;
+      color: #FFFFFF;
+
+    font-family: 'Roboto mono';
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+.overlay-container{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+
+.overlay {
+    .vertical-align();
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+
+.highlight-yellow {
+    color: yellow;
+}
+
+.bg-black {
+    background-color: rgb(65, 71, 74);
+    color: white;
+}
+
+.claim {
+    text-align: center;
+    /* a project by: */
+    font-family: 'Roboto Mono';
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.owl-nav {
+    width: 100%;
+    color: yellow;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+
+    .owl-prev {
+        float: left;
+    }
+
+    .owl-next {
+        float: right;
+    }
+}
+
+section{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0px;
+
+  @media @bs3-xs {
+    height: auto;
+    margin-bottom: 20px;
+
+    .middle{
+      transform: translateY(0);
+      margin-top: auto;
+    }
+  }
+
+}
+
+.section-big{
+  min-height: 100%;
+  height: auto;
+}
+
+body{
+  height: 100%;
+}
+
+.ghostchef{
+  margin-top: 20px;
+  width: 90%;
+}
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.owl-nav{
+  @media @bs3-xs{
+    display: none;
+  }
+
+}

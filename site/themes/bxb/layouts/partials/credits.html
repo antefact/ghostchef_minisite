@@ -1,0 +1,23 @@
+<section id="credits" data-aos="fade-up">
+    <div class="container middle">
+
+        <div class="row row-centered">
+          <div class="col-md-12 claim">
+            a project by:
+          </div>
+        </div>
+        <div class="row">
+            {{ range .Site.Params.credits}}
+                <div class=col-sm-4>
+                  <a href="{{.link}}">
+                    <figure>
+                        <img class="img-responsive" src="{{$.Site.BaseURL}}img/{{.logo}}"/>
+                    </figure>
+                  </a>
+
+                </div>
+            {{end}}
+        </div>
+
+    </div>
+</section>

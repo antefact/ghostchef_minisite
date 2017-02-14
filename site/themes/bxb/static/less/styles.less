@@ -14,90 +14,113 @@
 @dark-grey: rgb(65, 71, 74)
 
 
+
+/* ============================ */
+/* FONTS */
+/* ============================ */
+
+/*
+ * Legal Disclaimer
+ *
+ * These Fonts are licensed only for use on these domains and their subdomains:
+ * bitsxbites.com
+ *
+ * It is illegal to download or use them on other websites.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2016
+ */
+
+
+/*
+ *
+ * INSTRUCTIONS
+ *
+ * Copy the Legal Disclaimer and the @font-faces statements to your regular CSS file.
+ * The fonts folder(s) should be placed relative to the regular CSS file.
+ *
+ * You can use either the complete or subsetted fonts:
+ * If you donâ€™t require the entire range of characters, you can use the smaller, subsetted webfonts instead.
+ * See "Glyphs & Languages" for an overview of the characters in the *_subsetted.html file in the root directory of this package.
+ *
+ */
+
+
+/* Complete */
+
 @font-face {
-  font-family: 'Roboto';
-  font-weight: 100;
+    font-family: "Brown-Bold";
+    src:url("fonts/lineto-brown-bold.eot");
+    src:url("fonts/lineto-brown-bold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/lineto-brown-bold.woff2") format("woff2"),
+        url("fonts/lineto-brown-bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Brown-Boldalt";
+    src:url("fonts/lineto-brown-boldalt.eot");
+    src:url("fonts/lineto-brown-boldalt.eot?#iefix") format("embedded-opentype"),
+        url("fonts/lineto-brown-boldalt.woff2") format("woff2"),
+        url("fonts/lineto-brown-boldalt.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Brown-Reclinbold";
+    src:url("fonts/lineto-brown-reclinbold.eot");
+    src:url("fonts/lineto-brown-reclinbold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/lineto-brown-reclinbold.woff2") format("woff2"),
+        url("fonts/lineto-brown-reclinbold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Brown-Reclinboldalt";
+    src:url("fonts/lineto-brown-reclinboldalt.eot");
+    src:url("fonts/lineto-brown-reclinboldalt.eot?#iefix") format("embedded-opentype"),
+        url("fonts/lineto-brown-reclinboldalt.woff2") format("woff2"),
+        url("fonts/lineto-brown-reclinboldalt.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** NittiGrotesk-Medium **/
+@font-face {
+  font-family: 'Nitti-Bold';
+  src: url('fonts/NittiGrotesk-Medium.eot');
+  src: local('â˜º'), url('fonts/NittiGrotesk-Medium.woff') format('woff'), url('fonts/NittiGrotesk-Medium.ttf') format('truetype'), url('fonts/NittiGrotesk-Medium.svg') format('svg');
+  font-weight: normal;
   font-style: normal;
-  src: url('../fonts/Roboto-100/Roboto-100.eot');
-  src: url('../fonts/Roboto-100/Roboto-100.eot?#iefix') format('embedded-opentype'),
-       local('Roboto Thin'),
-       local('Roboto-100'),
-       url('../fonts/Roboto-100/Roboto-100.woff2') format('woff2'),
-       url('../fonts/Roboto-100/Roboto-100.woff') format('woff'),
-       url('../fonts/Roboto-100/Roboto-100.ttf') format('truetype'),
-       url('../fonts/Roboto-100/Roboto-100.svg#Roboto') format('svg');
 }
 
+/** NittiGrotesk-Medium **/
 @font-face {
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: 'Nitti-Normal';
+  src: url('fonts/NittiGrotesk-Medium.eot');
+  src: local('â˜º'), url('fonts/NittiGrotesk-Medium.woff') format('woff'), url('fonts/NittiGrotesk-Medium.ttf') format('truetype'), url('fonts/NittiGrotesk-Medium.svg') format('svg');
+  font-weight: normal;
   font-style: normal;
-  src: url('../fonts/Roboto-regular/Roboto-regular.eot');
-  src: url('../fonts/Roboto-regular/Roboto-regular.eot?#iefix') format('embedded-opentype'),
-       local('Roboto'),
-       local('Roboto-regular'),
-       url('../fonts/Roboto-regular/Roboto-regular.woff2') format('woff2'),
-       url('../fonts/Roboto-regular/Roboto-regular.woff') format('woff'),
-       url('../fonts/Roboto-regular/Roboto-regular.ttf') format('truetype'),
-       url('../fonts/Roboto-regular/Roboto-regular.svg#Roboto') format('svg');
 }
 
-@font-face {
-  font-family: 'Roboto';
-  font-weight: 300;
-  font-style: light;
-  src: url('../fonts/Roboto-300/Roboto-300.eot');
-  src: url('../fonts/Roboto-300/Roboto-300.eot?#iefix') format('embedded-opentype'),
-       local('Roboto Light'),
-       local('Roboto-300'),
-       url('../fonts/Roboto-300/Roboto-300.woff2') format('woff2'),
-       url('../fonts/Roboto-300/Roboto-300.woff') format('woff'),
-       url('../fonts/Roboto-300/Roboto-300.ttf') format('truetype'),
-       url('../fonts/Roboto-300/Roboto-300.svg#Roboto') format('svg');
+html,body{
+  font-size:18px;
+  height: 100%;
+  width: 100%;
 }
 
-@font-face {
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-style: bold;
-  src: url('../fonts/Roboto-700/Roboto-700.eot');
-  src: url('../fonts/Roboto-700/Roboto-700.eot?#iefix') format('embedded-opentype'),
-       local('Roboto Bold'),
-       local('Roboto-700'),
-       url('../fonts/Roboto-700/Roboto-700.woff2') format('woff2'),
-       url('../fonts/Roboto-700/Roboto-700.woff') format('woff'),
-       url('../fonts/Roboto-700/Roboto-700.ttf') format('truetype'),
-       url('../fonts/Roboto-700/Roboto-700.svg#Roboto') format('svg');
+div,p,a,h1,h2,h3,h4,h5{
+  color: #000;
 }
 
 
-
-@font-face {
-  font-family: 'Roboto Mono';
-  font-weight: 100;
-  font-style: normal;
-  src: url('../fonts/Roboto-Mono-100/Roboto-Mono-100.eot');
-  src: url('../fonts/Roboto-Mono-100/Roboto-Mono-100.eot?#iefix') format('embedded-opentype'),
-       local('Roboto Mono Thin'),
-       local('Roboto-Mono-100'),
-       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.woff2') format('woff2'),
-       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.woff') format('woff'),
-       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.ttf') format('truetype'),
-       url('../fonts/Roboto-Mono-100/Roboto-Mono-100.svg#RobotoMono') format('svg');
-}
-
-@font-face {
-  font-family: 'Roboto Mono';
-  font-weight: 400;
-  font-style: normal;
-  src: url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.eot');
-  src: url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.eot?#iefix') format('embedded-opentype'),
-       local('Roboto Mono'),
-       local('Roboto-Mono-regular'),
-       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.woff2') format('woff2'),
-       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.woff') format('woff'),
-       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.ttf') format('truetype'),
-       url('../fonts/Roboto-Mono-regular/Roboto-Mono-regular.svg#RobotoMono') format('svg');
+div,p,a{
+  font-family: 'Nitti-Normal','Helvetica-Bold', Arial , Sans-serif;
 }
 
 .container {
@@ -123,19 +146,14 @@
     @include vertical-align();
 }
 
-html {
-    height: 100%;
-    width: 100%;
-    font-family: roboto, sans-serif;
-}
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-    font-family: 'Roboto Mono';
-    text-align: center;
+  font-family:'Brown-Bold','Helvetica-Bold', Arial , Sans-serif;
+      text-align: center;
     a:focus,
     a:hover {
         text-decoration: none;
@@ -157,7 +175,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Roboto';
     font-weight: 100;
     letter-spacing: 1.5px;
 
@@ -176,7 +193,6 @@ h2 {
 
 p {
     /* Spicy jalapeno chick: */
-    font-family: 'Open Sans';
     font-size: 1.2em;
     color: #000000;
     line-height: 1.5em;
@@ -219,7 +235,6 @@ padding: 50px 0px;
         .caption {
 
             span {
-              font-family: 'Roboto mono';
               font-size: 1em;
               color: #fff;
               padding: 20px 10px 10px 0;
@@ -348,7 +363,6 @@ padding: 50px 0px;
       padding: 20px;
       color: #FFFFFF;
 
-    font-family: 'Roboto mono';
     font-size: 1em;
     text-align: center;
   }
@@ -386,7 +400,6 @@ padding: 50px 0px;
 .claim {
     text-align: center;
     /* a project by: */
-    font-family: 'Roboto Mono';
     font-size: 15px;
     color: #000000;
     letter-spacing: 0;

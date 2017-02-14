@@ -10,7 +10,7 @@ theme ="bxb"
 
 	# All blog posts are defined in their own files.
 
-	title = "👻🍳 Ghost Chef 👻🍳"
+	title = "Ghost Chef"
 	subtitle = "A research on generative tools and food"
 
   [params.processGallery]

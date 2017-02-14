@@ -23,12 +23,12 @@ $(window).on('load', function() {
         ],
     });
     AOS.init({
-          offset: 200,
-          duration: 600,
-          easing: 'ease-in-sine',
-          delay: 100,
-        });
-      });
+        offset: 200,
+        duration: 600,
+        easing: 'ease-in-sine',
+        delay: 100,
+    });
+});
 
 
 $(document).ready(function() {
@@ -37,8 +37,6 @@ $(document).ready(function() {
 
     var videoElem = document.getElementById("main-video");
 
-    $("#main-video").get(0).addEventListener('play', toggleBigButton, false);
-    $("#main-video").get(0).addEventListener('pause', toggleBigButton, false);
 
     function toggleBigButton() {
         if (videoElem.paused == true) {
@@ -48,24 +46,44 @@ $(document).ready(function() {
         }
     }
 
+    $("#main-video").click(function(){
+      playMovieFullScreenIfDevice();
+    })
+
+    $(".closeVideo").click(function(){
+      $("#videoPlayer").toggleClass("visible");
+videoElem.pause();
+    })
+
+    $("#watchMovie").click(function() {
+        $("#videoPlayer").toggleClass("visible");
+        playMovieFullScreenIfDevice();
+
+    });
+
     $("#play-button").click(function() {
+        playMovieFullScreenIfDevice();
+    });
+
+
+    function playMovieFullScreenIfDevice() {
         if (videoElem.paused == true) {
-          //if the video is played from small device send it to fullscreen
             if ($(window).width() > 739) {
+
             } else {
                 if (videoElem.requestFullscreen) {
-                  videoElem.requestFullscreen();
+                    videoElem.requestFullscreen();
                 } else if (videoElem.mozRequestFullScreen) {
-                  videoElem.mozRequestFullScreen(); // Firefox
+                    videoElem.mozRequestFullScreen(); // Firefox
                 } else if (videoElem.webkitRequestFullscreen) {
-                  videoElem.webkitRequestFullscreen(); // Chrome and Safari
+                    videoElem.webkitRequestFullscreen(); // Chrome and Safari
                 }
             }
             playMovie()
-        } else {
-            videoElem.pause();
+        }else{
+          videoElem.pause();
         }
-    });
+    }
 
     // In browsers that don’t yet support this functionality,
     // playPromise won’t be defined.

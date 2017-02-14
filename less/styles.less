@@ -332,6 +332,31 @@ a:hover {
       width: 100%;
     }
 
+    #videoPlayer{
+      position: absolute;
+      background-color: #000;
+      top: 0;
+      height: 100%;
+      opacity: 0;
+      z-index: -100;
+      .transition( opacity 1s);
+
+      &.visible{
+        opacity: 1;
+        z-index: 100;
+
+      }
+
+      .closeVideo {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          color: #fff;
+      }
+    }
+
+
+
     .videoBackground {
         position: fixed;
         top: 0;

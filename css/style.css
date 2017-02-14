@@ -9361,7 +9361,7 @@ a:hover {
   text-transform: uppercase;
   font-family: 'Brown-Bold', 'Helvetica-Bold', Arial, Sans-serif;
   font-weight: 500;
-  margin: 20px 20px;
+  margin: 20px;
   display: inline-block;
 }
 #hero {
@@ -9380,7 +9380,7 @@ a:hover {
   height: 100%;
   position: fixed;
   background-color: #fff;
-  opacity: .6;
+  opacity: 0.6;
 }
 #hero #subtitle {
   margin-top: 0;
@@ -9463,46 +9463,20 @@ a:hover {
 #video .videoContainer .middle {
   transform: translateY(-50%) translateX(-50%);
 }
-#video .playOverlay {
-  background-color: yellow;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  opacity: 1;
+#progress .owl-carousel .item {
+  border: 2px solid #fff;
 }
-@media only screen and (max-width:767px) {
-  #video .playOverlay {
-    width: 40px;
-    height: 40px;
-    padding: 7px 11px;
-  }
-  #video .playOverlay .fa {
-    font-size: 2em !important;
-  }
+#progress .owl-carousel .item .caption {
+  background-color: #000;
+  color: #fff;
+  bottom: 1em;
+  left: 1em;
+  padding: 10px;
+  position: absolute;
 }
-@media only screen and (min-width:768px) {
-  #video .playOverlay {
-    width: 50px;
-    height: 50px;
-    padding: 13px 15px;
-  }
-  #video .playOverlay .fa {
-    font-size: 2em !important;
-  }
-}
-@media only screen and (min-width:992px) {
-  #video .playOverlay {
-    width: 100px;
-    height: 100px;
-    padding: 23px 32px;
-  }
-  #video .playOverlay .fa {
-    font-size: 4em !important;
-  }
-}
-#video .playOverlay.playing {
-  opacity: 0;
+#progress .owl-carousel .item .caption h4 {
+  color: #fff;
+  text-align: left;
 }
 #contact .middle {
   z-index: -100;

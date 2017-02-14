@@ -1,7 +1,7 @@
 <section id="hero" data-aos="fade-up">
 
     <div class="videoBackground">
-        <video loop muted autoplay id="main-video">
+        <video loop muted autoplay id="hero-video">
             <source src="{{.Site.BaseURL}}video/hb1.webm" type="video/webm">
             Your browser does not support the video tag.
         </video>
@@ -24,15 +24,26 @@
             <input type="text" class="ghostchef"></input>
         </div> -->
     </div>
-        <div class=" buttons">
-                <span class="boxSpan">
-                    watch the movie
-                </span>
+    <div class=" buttons">
+        <span class="boxSpan" id="watchMovie">
+            watch the movie
+        </span>
 
-                <span class="boxSpan">
-                    read the story
-                </span>
-
+        <span class="boxSpan">
+            read the story
+        </span>
     </div>
 
-</section>
+    <div id="videoPlayer">
+      <div class="videoContainer middle">
+          <video width="100%" height="100%" id="main-video" poster="{{.Site.BaseURL}}img/centaurkitchen.png" allowfullscreen>
+              <source src="{{.Site.BaseURL}}video/GhostChef.webm" type="video/webm">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+      <div class="closeVideo">
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      </div>
+    </div>
+
+  </section>

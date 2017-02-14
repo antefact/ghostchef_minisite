@@ -1,13 +1,13 @@
 <section id="hero" data-aos="fade-up">
 
+    <div class="videoBackground">
+        <video loop muted autoplay id="main-video">
+            <source src="{{.Site.BaseURL}}video/hb1.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-  <div class="videoBackground">
-    <video loop muted autoplay  id="main-video">
-        <source src="{{.Site.BaseURL}}video/hb1.webm" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
-  </div>
-
+    <div class="textureOverlay"></div>
     <div class="container middle">
         <div class="row">
             <h1 id="title">
@@ -17,11 +17,22 @@
         <div class="row">
             <h2 id="subtitle">
                 {{.Site.Params.subtitle}}
-
             </h2>
         </div>
+
         <!-- <div class="row">
             <input type="text" class="ghostchef"></input>
         </div> -->
     </div>
+        <div class=" buttons">
+                <span class="boxSpan">
+                    watch the movie
+                </span>
+
+                <span class="boxSpan">
+                    read the story
+                </span>
+
+    </div>
+
 </section>

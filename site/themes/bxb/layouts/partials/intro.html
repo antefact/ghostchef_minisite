@@ -6,7 +6,12 @@
 
             {{ range .Data.Pages }}
                 {{if and (eq .Title "intro") }}
-                    {{.Content}}
+
+                <h3>
+                  {{.Params.titlesection}}
+                </h3>
+
+                  {{.Content}}
                 {{end}}
             {{ end }}
 

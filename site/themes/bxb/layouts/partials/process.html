@@ -1,18 +1,22 @@
-<section id="progress" data-aos="fade-up">
+<section id="process" data-aos="fade-up">
+    <div class="container middle ">
+        <div class="row ">
 
-    <div class="owl-carousel">
-        {{range .Site.Params.processGallery.photos}}
-            <div class="item">
-                <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{.img}}"/>
-                <div class="caption">
-                    <h4 class="title">
-                        {{ .captionTitle}}
-                    </h4>
-                    <span class="paragraph">
-                        {{ .captionDescription}}
-                    </span>
-                </div>
+            <div class="col-md-9">
+
+                {{ range .Data.Pages }}
+                    {{if and (eq .Title "process") }}
+
+                        <h3>
+                            {{.Params.titlesection}}
+                        </h3>
+
+                        {{.Content}}
+                    {{end}}
+                {{ end }}
+
             </div>
-        {{end}}
+
+        </div>
     </div>
 </section>

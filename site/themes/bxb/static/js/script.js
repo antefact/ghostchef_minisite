@@ -1,7 +1,7 @@
 var $root = $('html, body');
 $('a').click(function() {
     $root.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top-100
+        scrollTop: $($.attr(this, 'href')).offset().top - 100
     }, 500);
     return false;
 });
@@ -46,13 +46,13 @@ $(document).ready(function() {
         }
     }
 
-    $("#main-video").click(function(){
-      playMovieFullScreenIfDevice();
+    $("#main-video").click(function() {
+        playMovieFullScreenIfDevice();
     })
 
-    $(".closeVideo").click(function(){
-      $("#videoPlayer").toggleClass("visible");
-videoElem.pause();
+    $(".closeVideo").click(function() {
+        $("#videoPlayer").toggleClass("visible");
+        videoElem.pause();
     })
 
     $("#watchMovie").click(function() {
@@ -80,8 +80,8 @@ videoElem.pause();
                 }
             }
             playMovie()
-        }else{
-          videoElem.pause();
+        } else {
+            videoElem.pause();
         }
     }
 

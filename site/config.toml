@@ -34,6 +34,28 @@ theme ="bxb"
     captionTitle = "# fried cicken"
     captionDescription = "deep fried chicken served with bacon flavoured chips"
 
+    [params.prototypeGallery]
+      [[params.prototypeGallery.photos]]
+      img = "sketching.jpg"
+      captionTitle = "sketching Plates"
+      captionDescription = "Chef use to design plates on paper"
+
+      [[params.prototypeGallery.photos]]
+      img = "tasks.jpg"
+      captionTitle = "task division"
+      captionDescription = "every recipe is divided in microtasks,"
+
+      [[params.prototypeGallery.photos]]
+      img = "centaurkitchen.png"
+      captionTitle = "the centaur kitchen"
+      captionDescription = ""
+
+      [[params.prototypeGallery.photos]]
+      img = "centaurkitchen2.png"
+      captionTitle = "# fried cicken"
+      captionDescription = "deep fried chicken served with bacon flavoured chips"
+
+
 
   [params.interactionDetail]
     [params.interactionDetail.headerGif]

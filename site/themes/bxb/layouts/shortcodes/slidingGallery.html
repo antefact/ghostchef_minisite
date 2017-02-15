@@ -2,7 +2,7 @@
     <div class="owl-carousel">
         {{range .Page.Params.slidinggallery.photos}}
             <div class="item">
-                <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{.img}}"/>
+                <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img "." "_1440." }}"/>
                 <div class="caption">
                     <h4 class="title">
                         {{ .captionTitle}}

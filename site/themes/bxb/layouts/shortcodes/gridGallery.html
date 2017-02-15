@@ -1,10 +1,21 @@
-<section id="{{ if .Get "id" }}{{ .Get "id" }}{{ end }}" class="gridGallery" data-aos="fade-up">
+<section id="{{ if .Get " id" }}{{ .Get " id" }}{{ end }}" class="gridGallery" data-aos="fade-up">
 
     <div class="container">
-      <div class="row">
+        <div class="row">
 
+            <div class="#lightgallery">
+                {{range .Page.Params.gridgallery.photos}}
+                    <a href="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img "." "_1440." }}" class="col-md-6">
+                        <img src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img "." "_460." }}" class="img-responsive"/>
+                    </a>
+                {{end}}
+            </div>
+            <!--
         {{range .Page.Params.gridgallery.photos}}
-            <div class="col-md-6 col-sm-6">
+          <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{.img}}"/>
+
+
+             <div class="col-md-6 col-sm-6">
                 <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{.img}}"/>
                 <div class="caption">
                     <h4 class="title">
@@ -16,7 +27,8 @@
                 </div>
             </div>
         {{end}}
-      </div>
+        -->
+        </div>
 
     </div>
 </section>

@@ -56,8 +56,8 @@ module.exports = (grunt) ->
                         # { name: '480x200', width: 480, height: 200, aspectRatio: false }
                         #
                         # # different sizes for non cropped images
-                        # { name: '2000', width: 2000 }
-                        # { name: '1024', width: 1024 }
+                         { name: '1440', width: 1440 }
+                         { name: '460', width: 460 }
                         # { name: '768', width: 768 }
                         # { name: '480', width: 768 }
 

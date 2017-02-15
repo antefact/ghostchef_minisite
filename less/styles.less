@@ -8,7 +8,6 @@
 /*  For Medium devices Desktops */
 @bs3-lg: ~"only screen and (min-width:@{screen-lg-min})";
 /*  For Large devices Desktops */
-@navbar-height: 70px;
 @dark-grey: rgb(65, 71, 74);
 @old-pink: rgb(233, 229, 226);
 /* ============================ */
@@ -294,8 +293,58 @@ a:hover {
     margin: 20px;
     display: inline-block;
 }
-//section hero
+//main menu
 
+#mainNav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+   background-color: #e9e5e2;
+   border: 1px solid #dcd4ce;
+  z-index: 6;
+  height: 60px;
+
+  .transition(background-color 1s);
+
+  &.transparent{
+    background-color:transparent;
+  }
+
+  .navbar-brand{
+  //  background-image: url(../assets/underground_logo.svg);
+  padding: 0px;
+      .navbar-logo{
+        transition: 0.4s;
+          width: 100%;
+          max-width: 200px;
+          height: 60px;
+      }
+  }
+  .navbar-nav{
+    li a{
+      margin-right: 10px;
+      margin-left: 10px;
+      line-height: 20px;
+      margin-top: 4px;
+      display: inline-block;
+      font-family: 'Nitti-Normal', Arial , Sans-serif;
+      color: #000;
+
+      &:hover{
+        border-bottom: 4px solid black;
+      }
+    }
+
+
+  }
+
+}
+
+
+
+
+//section hero
 #hero {
     text-align: center;
     height: 100% !important;
@@ -309,7 +358,7 @@ a:hover {
     }
 
     .textureOverlay {
-        background-image: url('../img/pattern3.png');
+        background-image: url('../assets/pattern3.png');
         width: 100%;
         height: 100%;
         position: fixed;
@@ -364,7 +413,7 @@ a:hover {
         overflow: hidden;
         z-index: -100;
         @media (max-width: 767px) {
-            background: url('../img/header_bg.jpg') center center / cover no-repeat;
+            background: url('../assets/header_bg.jpg') center center / cover no-repeat;
         }
 
         video {
@@ -398,22 +447,24 @@ a:hover {
     }
 }
 //section progress
-#progress {
+
+.slidingGallery {
     .owl-carousel {
         .item {
-          border: 2px solid #fff;
+            border: 2px solid #fff;
 
             .caption {
-              background-color: #000;
-              color: #fff;
-              bottom: 1em;
-              left:1em;
-              padding: 10px;
-              position: absolute;
-              h4{
+                background-color: #000;
                 color: #fff;
-                text-align: left;
-              }
+                bottom: 1em;
+                left: 1em;
+                padding: 10px;
+                position: absolute;
+
+                h4 {
+                    color: #fff;
+                    text-align: left;
+                }
             }
         }
     }
@@ -569,4 +620,124 @@ body {
     @media @bs3-xs {
         display: none;
     }
+}
+// bxb footer
+.bxb_logo {
+    width: 12%;
+    max-width: 200px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    border: 0;
+    overflow: visible;
+    z-index: 30;
+    background-image: url("../assets/bxb_logo_ver.svg");
+    background-position: center;
+    background-size: 100%;
+}
+
+.bxb_logo img {
+    transition: 0.4s;
+    width: 100%;
+    max-width: 170px;
+    opacity: 0;
+    height: 60px;
+}
+
+.bb_footer {
+    min-width: 500px;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    // overflow: hidden;
+    padding: 30px 50px;
+}
+
+.bb_footer .footerRightSec {
+    text-align: right;
+}
+
+.bb_footer h1 {
+    font-family: 'Brown-Bold';
+    color: #fff;
+    text-align: left;
+}
+
+.bb_footer p {
+    color: #fff;
+}
+
+.bb_footer .social-network-link {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-position: center;
+    background-size: 50px;
+    color: transparent;
+}
+
+.sn-linkedIn {
+    background-image: url("../assets/button_linkedIn.png");
+}
+
+.sn-facebook {
+    background-image: url("../assets/button_facebook.png");
+}
+
+.sn-twitter {
+    background-image: url("../assets/button_twitter.png");
+}
+
+.sn-wechat {
+    background-image: url("../assets/button_wechat.png");
+    cursor: pointer;
+}
+
+.sn-wechat .qrcode {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    right: 0;
+    top: -200px;
+    display: none;
+}
+
+.sn-wechat .qrcode.qrcode_open {
+    display: block;
+}
+
+.sn-wechat .qrcode .closeQR {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -11px;
+    top: -11px;
+    background-color: white;
+    background-image: url("../assets/iconBkgMenu.png");
+    transform: rotate(45deg);
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sn-wechat .qrcode:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 30px;
+    border-width: 12px 12px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}
+
+.sn-wechat .qrcode img {
+    width: 100%;
 }

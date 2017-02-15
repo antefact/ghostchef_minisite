@@ -1,106 +1,24 @@
 baseurl = "https://antefact.github.io/ghostchef_minisite/"
 languageCode = "en-us"
-title = "Ghost Chef 👻🍳"
+title = "Underground"
 theme ="bxb"
 
 [params]
 
-	# You can use Markdown syntax for urls [text](//url.to/source) for
-	# most longer texts.
-
-	# All blog posts are defined in their own files.
-
-	title = "Ghost Chef"
-	subtitle = "A research on generative tools and food"
-
-  [params.processGallery]
-    [[params.processGallery.photos]]
-    img = "sketching.jpg"
-    captionTitle = "sketching Plates"
-    captionDescription = "Chef use to design plates on paper"
-
-    [[params.processGallery.photos]]
-    img = "tasks.jpg"
-    captionTitle = "task division"
-    captionDescription = "every recipe is divided in microtasks,"
-
-    [[params.processGallery.photos]]
-    img = "centaurkitchen.png"
-    captionTitle = "the centaur kitchen"
-    captionDescription = ""
-
-    [[params.processGallery.photos]]
-    img = "centaurkitchen2.png"
-    captionTitle = "# fried cicken"
-    captionDescription = "deep fried chicken served with bacon flavoured chips"
-
-    [params.prototypeGallery]
-      [[params.prototypeGallery.photos]]
-      img = "sketching.jpg"
-      captionTitle = "sketching Plates"
-      captionDescription = "Chef use to design plates on paper"
-
-      [[params.prototypeGallery.photos]]
-      img = "tasks.jpg"
-      captionTitle = "task division"
-      captionDescription = "every recipe is divided in microtasks,"
-
-      [[params.prototypeGallery.photos]]
-      img = "centaurkitchen.png"
-      captionTitle = "the centaur kitchen"
-      captionDescription = ""
-
-      [[params.prototypeGallery.photos]]
-      img = "centaurkitchen2.png"
-      captionTitle = "# fried cicken"
-      captionDescription = "deep fried chicken served with bacon flavoured chips"
+  # hero
+  [params.hero]
+    title="Underground"
+    subtitle = "A collaborative effort investigating the future of good food and good technology"
+    backgroundvideo="Clip113.webm"
 
 
-
-  [params.interactionDetail]
-    [params.interactionDetail.headerGif]
-    name = "globalGIf"
-    fileName = "topGif.gif"
-    caption= "Just start interacting with ghostchef by writing in something. Feel free to start from an ingredient, a recipe, a combination or even an emotion."
-    width=12
-
-    [[params.interactionDetail.gifs]]
-    name = "globalGIf"
-    fileName = "gif2.gif"
-    caption= "Decide who's going to be your ghost chef, which culinary identity should inspire you."
-    width=6
-
-
-    [[params.interactionDetail.gifs]]
-    name = "globalGIf"
-    fileName = "sliders.gif"
-    caption= "Tweak the intelligence behaviour by adjusting each chef specific settings."
-    width=6
-
-    [[params.interactionDetail.gifs]]
-    name = "globalGIf"
-    fileName = "learning.gif"
-    caption= "Teach the sysyem your style and record your personal culinary identity."
-    width=6
-
-    [[params.interactionDetail.gifs]]
-    name = "globalGIf"
-    fileName = "extensions.gif"
-    caption= "Access premium features like plating and task management."
-    width=6
-
-    [[params.credits]]
-    name = "bxb"
-    logo = "bxb_logo.png"
-    link= "http://www.bitsxbites.com"
+  #about
+  [params.about]
+    title="we are so cool"
+    paragraph="underground is an initiative powered by bitsxbites promoting collaborations between designers, technologists, scientists in exploring what the future of food will look like."
     
-    [[params.credits]]
-    name = "Mill"
-    logo = "mill-logo.png"
-    link= "http://www.mill-intelligence.com"
 
 
   # Navigation
 	[params.navigation]
-
 	[params.navigation.links]

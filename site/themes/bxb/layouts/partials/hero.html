@@ -1,0 +1,22 @@
+<section id="hero" data-aos="fade-up">
+  <div class="videoBackground">
+      <video loop muted autoplay id="hero-video">
+          <source src="{{.Site.BaseURL}}vid/{{.Site.Params.hero.backgroundvideo}}" type="video/webm">
+      </video>
+  </div>
+
+  <div class="textureOverlay"></div>
+
+  <div class="container middle">
+      <div class="row">
+          <h1 id="title">
+              {{.Site.Params.hero.title}}
+          </h1>
+      </div>
+      <div class="row">
+          <h2 id="subtitle">
+              {{.Site.Params.hero.subtitle}}
+          </h2>
+      </div>
+  </div>
+</section>

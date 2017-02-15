@@ -6,5 +6,7 @@ site/static/css/style.min.css
 .grunt/*/*
 *.mp4
 *.mov
+*.m4v
+
 site/static/vid/*
 site/static/img/*

@@ -1,5 +1,5 @@
 var $root = $('html, body');
-$('a').click(function() {
+$('a.anchor').click(function() {
     $root.animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 100
     }, 500);
@@ -64,6 +64,12 @@ $(document).ready(function() {
     $("#play-button").click(function() {
         playMovieFullScreenIfDevice();
     });
+
+
+        $("#bxbQRCode").click(function(event) {
+            event.preventDefault();
+            $(".sn-wechat .qrcode").toggleClass("qrcode_open");
+        });
 
 
     function playMovieFullScreenIfDevice() {

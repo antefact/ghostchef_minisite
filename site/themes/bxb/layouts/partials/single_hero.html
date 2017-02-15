@@ -24,7 +24,7 @@
     <div class=" buttons">
         {{range .Params.hero.buttons}}
             {{ if eq .type "anchor" }}
-                <a href="{{.anchor}}" class="boxSpan">{{.label}}</a>
+                <a href="{{.anchor}}" class="boxSpan anchor">{{.label}}</a>
             {{else if eq .type "startMovie"}}
                 <span class="boxSpan" id="watchMovie">watch the movie</span>
             {{ end }}

@@ -35,7 +35,7 @@ module.exports = (grunt) ->
             # This task is not required if `inline` source maps are used.
             video:
                 expand: true
-                src: 'vid/*'
+                src: 'vid/**'
                 dest: 'site/static/'
 
         responsive_images:

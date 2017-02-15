@@ -2,7 +2,7 @@
     <div class="owl-carousel">
         {{range .Page.Params.slidinggallery.photos}}
             <div class="item">
-                <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{.img}}"/>
+                <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{.img}}"/>
                 <div class="caption">
                     <h4 class="title">
                         {{ .captionTitle}}

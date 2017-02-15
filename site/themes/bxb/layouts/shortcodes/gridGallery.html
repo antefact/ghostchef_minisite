@@ -5,7 +5,7 @@
 
         {{range .Page.Params.gridgallery.photos}}
             <div class="col-md-6 col-sm-6">
-                <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{.img}}"/>
+                <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{.img}}"/>
                 <div class="caption">
                     <h4 class="title">
                         {{ .captionTitle}}

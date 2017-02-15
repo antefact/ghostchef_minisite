@@ -9314,6 +9314,16 @@ a:hover {
   padding: 20px 10px 10px 0;
   display: inline-block;
 }
+.fill {
+  height: 100%;
+}
+.placeholder-img {
+  background-image: url("../assets/underground_logo.svg");
+  background-size: 50px 10px;
+}
+.placeholder-img h2 {
+  color: white;
+}
 .columns {
   -webkit-column-count: 2;
   -webkit-column-gap: 15px;
@@ -9352,6 +9362,9 @@ a:hover {
 .card.card-12 {
   padding: 1% 2%;
 }
+.responsive_video {
+  max-width: 100%;
+}
 .boxSpan {
   border: 4px solid #000;
   background-color: #fff;
@@ -9383,7 +9396,7 @@ a:hover {
   background-color: transparent;
 }
 #mainNav .navbar-brand {
-  padding: 0px;
+  padding: 0;
 }
 #mainNav .navbar-brand .navbar-logo {
   transition: 0.4s;
@@ -9751,4 +9764,20 @@ body {
 }
 .sn-wechat .qrcode img {
   width: 100%;
+}
+#single-project-teaser .overlay-container {
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  -moz-transition: background-color 1s;
+  -ms-transition: background-color 1s;
+  -o-transition: background-color 1s;
+}
+#single-project-teaser .overlay-container h2 {
+  color: #fff;
+}
+#single-project-teaser .overlay-container h1 {
+  color: #fff;
+}
+#single-project-teaser .overlay-container:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }

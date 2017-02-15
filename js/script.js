@@ -37,6 +37,7 @@ $(document).ready(function() {
 
     // Video
 
+    $("#lightgallery").lightGallery(); 
 
     $('#hero').on('inview', function(event, isInView) {
       if (isInView) {
@@ -60,9 +61,6 @@ $(document).ready(function() {
 
     $("#main-video").click(function() {
         playMovieFullScreenIfDevice();
-
-
-
     })
 
     $(".closeVideo").click(function() {

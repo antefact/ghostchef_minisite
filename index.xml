@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ghost Chef</title>
+    <title>Underground</title>
     <link>https://antefact.github.io/ghostchef_minisite/index.xml</link>
-    <description>Recent content on Ghost Chef</description>
+    <description>Recent content on Underground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <atom:link href="https://antefact.github.io/ghostchef_minisite/index.xml" rel="self" type="application/rss+xml" />
@@ -38,7 +38,7 @@ We started this project by digging in the kitchen world. We worked with Mill and
     &lt;div class=&#34;owl-carousel&#34;&gt;
         
             &lt;div class=&#34;item&#34;&gt;
-                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/sketching.jpg&#34;/&gt;
+                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/sketching_1440.jpg&#34;/&gt;
                 &lt;div class=&#34;caption&#34;&gt;
                     &lt;h4 class=&#34;title&#34;&gt;
                         sketching Plates
@@ -50,7 +50,7 @@ We started this project by digging in the kitchen world. We worked with Mill and
             &lt;/div&gt;
         
             &lt;div class=&#34;item&#34;&gt;
-                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks.jpg&#34;/&gt;
+                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks_1440.jpg&#34;/&gt;
                 &lt;div class=&#34;caption&#34;&gt;
                     &lt;h4 class=&#34;title&#34;&gt;
                         task division
@@ -62,7 +62,7 @@ We started this project by digging in the kitchen world. We worked with Mill and
             &lt;/div&gt;
         
             &lt;div class=&#34;item&#34;&gt;
-                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen.png&#34;/&gt;
+                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen_1440.png&#34;/&gt;
                 &lt;div class=&#34;caption&#34;&gt;
                     &lt;h4 class=&#34;title&#34;&gt;
                         the centaur kitchen
@@ -74,7 +74,7 @@ We started this project by digging in the kitchen world. We worked with Mill and
             &lt;/div&gt;
         
             &lt;div class=&#34;item&#34;&gt;
-                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen2.png&#34;/&gt;
+                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen2_1440.png&#34;/&gt;
                 &lt;div class=&#34;caption&#34;&gt;
                     &lt;h4 class=&#34;title&#34;&gt;
                         # fried cicken
@@ -107,61 +107,32 @@ We started this project by digging in the kitchen world. We worked with Mill and
 &lt;/section&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;section id=&#34;prototypeGallery&#34; class=&#34;gridGallery&#34; data-aos=&#34;fade-up&#34;&gt;
+&lt;p&gt;&lt;section id=&#34;&#34; class=&#34;gridGallery&#34; data-aos=&#34;fade-up&#34;&gt;
 
     &lt;div class=&#34;container&#34;&gt;
-      &lt;div class=&#34;row&#34;&gt;
+        &lt;div class=&#34;row&#34;&gt;
 
-        
-            &lt;div class=&#34;col-md-6 col-sm-6&#34;&gt;
-                &lt;img class=&#34;img-responsive&#34; src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/sketching.jpg&#34;/&gt;
-                &lt;div class=&#34;caption&#34;&gt;
-                    &lt;h4 class=&#34;title&#34;&gt;
-                        sketching Plates
-                    &lt;/h4&gt;
-                    &lt;span class=&#34;paragraph&#34;&gt;
-                        Chef use to design plates on paper
-                    &lt;/span&gt;
-                &lt;/div&gt;
+            &lt;div class=&#34;#lightgallery&#34;&gt;
+                
+                    &lt;a href=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/sketching_1440.jpg&#34; class=&#34;col-md-6&#34;&gt;
+                        &lt;img src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/sketching_460.jpg&#34; class=&#34;img-responsive&#34;/&gt;
+                    &lt;/a&gt;
+                
+                    &lt;a href=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks_1440.jpg&#34; class=&#34;col-md-6&#34;&gt;
+                        &lt;img src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks_460.jpg&#34; class=&#34;img-responsive&#34;/&gt;
+                    &lt;/a&gt;
+                
+                    &lt;a href=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen_1440.png&#34; class=&#34;col-md-6&#34;&gt;
+                        &lt;img src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen_460.png&#34; class=&#34;img-responsive&#34;/&gt;
+                    &lt;/a&gt;
+                
+                    &lt;a href=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen2_1440.png&#34; class=&#34;col-md-6&#34;&gt;
+                        &lt;img src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen2_460.png&#34; class=&#34;img-responsive&#34;/&gt;
+                    &lt;/a&gt;
+                
             &lt;/div&gt;
-        
-            &lt;div class=&#34;col-md-6 col-sm-6&#34;&gt;
-                &lt;img class=&#34;img-responsive&#34; src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks.jpg&#34;/&gt;
-                &lt;div class=&#34;caption&#34;&gt;
-                    &lt;h4 class=&#34;title&#34;&gt;
-                        task division
-                    &lt;/h4&gt;
-                    &lt;span class=&#34;paragraph&#34;&gt;
-                        every recipe is divided in microtasks,
-                    &lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        
-            &lt;div class=&#34;col-md-6 col-sm-6&#34;&gt;
-                &lt;img class=&#34;img-responsive&#34; src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen.png&#34;/&gt;
-                &lt;div class=&#34;caption&#34;&gt;
-                    &lt;h4 class=&#34;title&#34;&gt;
-                        the centaur kitchen
-                    &lt;/h4&gt;
-                    &lt;span class=&#34;paragraph&#34;&gt;
-                        
-                    &lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        
-            &lt;div class=&#34;col-md-6 col-sm-6&#34;&gt;
-                &lt;img class=&#34;img-responsive&#34; src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen2.png&#34;/&gt;
-                &lt;div class=&#34;caption&#34;&gt;
-                    &lt;h4 class=&#34;title&#34;&gt;
-                        # fried cicken
-                    &lt;/h4&gt;
-                    &lt;span class=&#34;paragraph&#34;&gt;
-                        deep fried chicken served with bacon flavoured chips
-                    &lt;/span&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        
-      &lt;/div&gt;
+            
+        &lt;/div&gt;
 
     &lt;/div&gt;
 &lt;/section&gt;

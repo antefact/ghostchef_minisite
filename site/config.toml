@@ -93,6 +93,7 @@ theme ="bxb"
     name = "bxb"
     logo = "bxb_logo.png"
     link= "http://www.bitsxbites.com"
+    
     [[params.credits]]
     name = "Mill"
     logo = "mill-logo.png"
@@ -101,14 +102,5 @@ theme ="bxb"
 
   # Navigation
 	[params.navigation]
-		brand = "brand"
 
 	[params.navigation.links]
-
-  [params.navigation.links.blog]
-		name     = "blog"
-		link = "/blog"
-
-  [params.navigation.links.services]
-  	name     = "services"
-  	link = "#services"

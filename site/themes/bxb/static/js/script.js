@@ -6,6 +6,8 @@ $('a.anchor').click(function() {
     return false;
 });
 
+
+
 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 
@@ -35,6 +37,16 @@ $(document).ready(function() {
 
     // Video
 
+
+    $('#hero').on('inview', function(event, isInView) {
+      if (isInView) {
+        $('#mainNav').addClass("transparent");
+      } else {
+        $('#mainNav').removeClass("transparent");
+      }
+    });
+
+
     var videoElem = document.getElementById("main-video");
 
 
@@ -48,10 +60,14 @@ $(document).ready(function() {
 
     $("#main-video").click(function() {
         playMovieFullScreenIfDevice();
+
+
+
     })
 
     $(".closeVideo").click(function() {
         $("#videoPlayer").toggleClass("visible");
+        $("#hero").css("z-index", "1");
         videoElem.pause();
     })
 
@@ -75,6 +91,7 @@ $(document).ready(function() {
     function playMovieFullScreenIfDevice() {
         if (videoElem.paused == true) {
             if ($(window).width() > 739) {
+              $("#hero").css("z-index", "100");
 
             } else {
                 if (videoElem.requestFullscreen) {
@@ -85,8 +102,10 @@ $(document).ready(function() {
                     videoElem.webkitRequestFullscreen(); // Chrome and Safari
                 }
             }
+
             playMovie()
         } else {
+            $("#hero").css("z-index", "1");
             videoElem.pause();
         }
     }

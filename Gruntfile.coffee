@@ -76,7 +76,7 @@ module.exports = (grunt) ->
             dist : {
                 expand : true,
                 cwd : 'site/themes/bxb/static/svg/',
-                src : '**/*.svg',
+                src : 'svg/*.svg',
                 dest : 'site/themes/bxb/static/',
                 options : "mode": {
                     "symbol": true,

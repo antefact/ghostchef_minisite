@@ -1,0 +1,14 @@
+<section id="{{ if .Get "id" }}{{ .Get "id" }}{{ end }}" data-aos="fade-up">
+    <div class="container middle">
+        <div class="row ">
+            <div class="col-md-9">
+                <h3>
+                    {{ if .Get "title" }}
+                        {{ .Get "title" }}
+                    {{ end }}
+                </h3>
+                {{.Inner}}
+            </div>
+        </div>
+    </div>
+</section>

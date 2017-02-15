@@ -1,0 +1,17 @@
+<section id="{{ if .Get "id" }}{{ .Get "id" }}{{ end }}" class="slidingGallery" data-aos="fade-up">
+    <div class="owl-carousel">
+        {{range .Page.Params.slidinggallery.photos}}
+            <div class="item">
+                <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{.img}}"/>
+                <div class="caption">
+                    <h4 class="title">
+                        {{ .captionTitle}}
+                    </h4>
+                    <span class="paragraph">
+                        {{ .captionDescription}}
+                    </span>
+                </div>
+            </div>
+        {{end}}
+    </div>
+</section>

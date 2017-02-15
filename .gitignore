@@ -2,6 +2,9 @@ node_modules/*
 build/*
 *.DS_Store
 site/static/css/style.css
+site/static/css/style.min.css
 .grunt/*/*
 *.mp4
 *.mov
+site/static/vid/*
+site/static/img/*

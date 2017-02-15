@@ -1,0 +1,22 @@
+<section id="{{ if .Get "id" }}{{ .Get "id" }}{{ end }}" class="gridGallery" data-aos="fade-up">
+
+    <div class="container">
+      <div class="row">
+
+        {{range .Page.Params.gridgallery.photos}}
+            <div class="col-md-6 col-sm-6">
+                <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{.img}}"/>
+                <div class="caption">
+                    <h4 class="title">
+                        {{ .captionTitle}}
+                    </h4>
+                    <span class="paragraph">
+                        {{ .captionDescription}}
+                    </span>
+                </div>
+            </div>
+        {{end}}
+      </div>
+
+    </div>
+</section>

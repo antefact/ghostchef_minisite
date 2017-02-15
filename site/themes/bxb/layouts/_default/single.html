@@ -1,15 +1,6 @@
 {{ partial "header.html" . }}
-{{ partial "nav.html" .}}
-<div class="container">
+{{ partial "single_hero.html" . }}
 
-    <section id="main">
-        <h1 id="title">{{ .Title }}</h1>
+{{ .Content }}
 
-        <div>
-            <article id="content">
-                {{ .Content }}
-            </article>
-        </div>
-    </section>
-</div>
 {{ partial "footer.html" . }}

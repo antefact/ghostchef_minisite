@@ -1,0 +1,46 @@
+<section id="hero" data-aos="fade-up">
+
+    <div class="videoBackground">
+        <video loop muted autoplay id="hero-video">
+            <source src="{{.Site.BaseURL}}img/{{.Params.datafolder}}/{{.Params.hero.backgroundvideo}}" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="textureOverlay"></div>
+    <div class="container middle">
+        <div class="row">
+            <h1 id="title">
+                {{.Title}}
+            </h1>
+        </div>
+        <div class="row">
+            <h2 id="subtitle">
+                {{.Params.subtitle}}
+            </h2>
+        </div>
+    </div>
+
+    <div class=" buttons">
+        {{range .Params.hero.buttons}}
+            {{ if eq .type "anchor" }}
+                <a href="{{.anchor}}" class="boxSpan">{{.label}}</a>
+            {{else if eq .type "startMovie"}}
+                <span class="boxSpan" id="watchMovie">watch the movie</span>
+            {{ end }}
+        {{end}}
+    </div>
+
+    <div id="videoPlayer">
+        <div class="videoContainer middle">
+            <video width="100%" height="100%" id="main-video" poster="{{.Site.BaseURL}}img/centaurkitchen.png" allowfullscreen>
+                <source src="{{.Site.BaseURL}}video/GhostChef.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="closeVideo">
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </div>
+    </div>
+
+</section>

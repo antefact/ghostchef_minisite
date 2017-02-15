@@ -17,10 +17,10 @@ module.exports = (grunt) ->
                     ]
         coffee:
             options:
-                join: true             # Concatenate before, not after compilation.
-                sourceMap: true        # Make a source map.
+                join: true # Concatenate before, not after compilation.
+                sourceMap: true # Make a source map.
                 sourceRoot: '/coffee/' # URL debugger should use to download .coffee files.
-                inline: true           # Embed coffee source inside the source map.
+                inline: true # Embed coffee source inside the source map.
             build:
                 src: 'coffee/mysite.coffee'
                 dest: 'site/static/js/mysite.js'
@@ -33,9 +33,11 @@ module.exports = (grunt) ->
                 dest: 'site/static/js/mysite.min.js'
         copy:
             # This task is not required if `inline` source maps are used.
-            coffee:
-                src: 'coffee/*'
+            video:
+                expand: true
+                src: 'vid/*'
                 dest: 'site/static/'
+
         responsive_images:
             process:
                 options:
@@ -64,25 +66,26 @@ module.exports = (grunt) ->
                 files: [
                     expand: true
                     cwd: 'img'
-                    src: '**.{png,jpg,jpeg,gif}'
+                    src: '**/*.{png,jpg,jpeg,gif}'
                     dest: 'site/static/img'
                 ]
 
 
 
-        svg_sprite        : {
-            dist          : {
-                expand    : true,
-                cwd       : 'site/themes/bxb/static/svg/',
-                src       : '**/*.svg',
-                dest      : 'site/themes/bxb/static/',
-                options   : "mode": {
-                  "symbol": true,
-                  "log": "verbose",
-                  "inline": true,
+        svg_sprite : {
+            dist : {
+                expand : true,
+                cwd : 'site/themes/bxb/static/svg/',
+                src : '**/*.svg',
+                dest : 'site/themes/bxb/static/',
+                options : "mode": {
+                    "symbol": true,
+                    "log": "verbose",
+                    "inline": true,
                 }
             }
         }
+
 
         watch:
             options:
@@ -91,9 +94,6 @@ module.exports = (grunt) ->
             less:
                 files: ['site/themes/bxb/static/less/*.less']
                 tasks: 'less:dev'
-            coffee:
-                files: ['coffee/*.coffee']
-                tasks: ['coffee', 'copy:coffee']
             images:
                 files: ['img/**']
                 tasks: 'responsive_images'
@@ -103,6 +103,7 @@ module.exports = (grunt) ->
             all:
                 files: ['Gruntfile.coffee']
                 tasks: 'dev'
+
         connect:
             mysite:
                 options:
@@ -139,8 +140,9 @@ module.exports = (grunt) ->
         'grunt-responsive-images'
         'grunt-svg-sprite'
         'grunt-gh-pages'
+
     ]
-    grunt.registerTask 'dev', ['less:dev', 'coffee', 'copy:coffee', 'svg_sprite','responsive_images', 'hugo:dev']
-    grunt.registerTask 'default', ['less:dist', 'coffee', 'copy:coffee', 'uglify','svg_sprite', 'responsive_images', 'hugo:dist']
+    grunt.registerTask 'dev', ['less:dev', 'copy:video', 'svg_sprite','responsive_images' ,'hugo:dev']
+    grunt.registerTask 'default', ['less:dist', 'copy:video', 'uglify','svg_sprite', 'responsive_images', 'hugo:dist']
     grunt.registerTask 'edit', ['connect', 'watch']
     grunt.registerTask 'deploy', ['gh-pages']

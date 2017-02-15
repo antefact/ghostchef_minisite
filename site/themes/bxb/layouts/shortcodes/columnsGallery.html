@@ -1,0 +1,36 @@
+<section id="{{ if .Get "id" }}{{ .Get "id" }}{{ end }}" class="section-big inverted" data-aos="fade-up">
+    <div class="container">
+
+        <div class="card card-{{ .Page.Params.columnsgallery.headerimage.width }}">
+            <div class="interaction-gif">
+              <div class="caption">
+                  <span>
+                      {{.Page.Params.interactionDetail.headerGif.caption}}
+                  </span>
+              </div>
+                <figure class="img-responsive">
+                    <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{.Page.Params.interactionDetail.headerimage.fileName}}"/>
+                </figure>
+
+            </div>
+        </div>
+
+        <div class="columns">
+            {{range .Page.Params.columnsgallery.image}}
+                <div class="card card-{{ .width }}">
+                    <div class="interaction-gif">
+                      <div class="caption">
+                          <span>
+                              {{.caption}}
+                          </span>
+                      </div>
+                        <figure class="img-responsive">
+                            <img class="img-responsive" src="{{.Site.BaseURL}}img/{{.fileName}}"/>
+                        </figure>
+
+                    </div>
+                </div>
+            {{end}}
+        </div>
+    </div>
+</section>

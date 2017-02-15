@@ -5,7 +5,7 @@ datafolder = "ghostchef"
 video="GhostChef.webm"
 
   [hero]
-    backgroundimage=""
+    backgroundimage="centaurkitchen2.png"
     backgroundvideo="ghostChef_header_background.webm"
     [[hero.buttons]]
       type="startMovie"
@@ -107,8 +107,8 @@ We started this project by digging in the kitchen world. We worked with Mill and
 
 {{< slidingGallery id="researchGallery">}}
 
-{{< textSection id="process" title="prototyping to explore...">}}
-this section is about the prototyping
+{{< textSection id="process" title="prototyping to explore">}}
+We started this project by digging in the kitchen world. We worked with Mill and followed all the steps taken in a professional kitchen before and after the actual cooking and serving of a meal: from deciding the menu, sketching the plates, dividing the task, and eventually spending a full day in a real kitchen cooking a 4-course menu for 60 people.
 {{< /textSection >}}
 
 {{< gridGallery id="prototypeGallery">}}

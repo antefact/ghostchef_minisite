@@ -1,20 +1,18 @@
+{{range .Page.Params.gridgallery.photos}}
+    {{if .video}}
+        <div style="display:none;" id="{{.id}}">
+            <video class="lg-video-object lg-html5" controls preload="none">
+                <source src="{{ $.Site.BaseURL }}vid/{{$.Page.Params.datafolder}}/{{.video}}" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    {{end}}
+{{end}}
+
 <section id="{{ if .Get " id" }}{{ .Get " id" }}{{ end }}" class="gridGallery" data-aos="fade-up">
 
     <div class="container">
         <div class="row">
-
-
-          {{range .Page.Params.gridgallery.photos}}
-              {{if .video}}
-                  <div style="display:none;" id="{{.id}}">
-                      <video class="lg-video-object lg-html5" controls preload="none">
-                          <source src="{{ $.Site.BaseURL }}vid/{{$.Page.Params.datafolder}}/{{.video}}" type="video/mp4">
-                          Your browser does not support HTML5 video.
-                      </video>
-                  </div>
-              {{end}}
-          {{end}}
-
             <div id="lightgallery">
                 {{range .Page.Params.gridgallery.photos}}
 

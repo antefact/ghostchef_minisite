@@ -27,15 +27,13 @@ $(window).on('load', function() {
     });
 
     mycarousel.on('loaded.owl.lazy', function(event) {
-        var nextpic = new Image();
         var totitem = event.item.count + 2;
         var nextitem = event.item.index + 1;
 
         if (nextitem <= totitem) {
             var imgsrc = $(event.target).find('.item').eq(nextitem).find('img').data('src');
-            nextpic.src = imgsrc;
             console.log($(event.target).find('.item').eq(nextitem).find('img').attr("src"));
-            $(event.target).find('.item').eq(nextitem).find('img').attr("src",nextpic.src).css("opacity","1");
+            $(event.target).find('.item').eq(nextitem).find('img').attr("src",imgsrc).css("opacity","1");
         }
     });
 

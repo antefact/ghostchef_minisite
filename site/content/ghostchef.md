@@ -27,7 +27,12 @@ video="GhostChef.webm"
     captionDescription = "every recipe is divided in microtasks,"
 
     [[slidinggallery.photos]]
-    img = "centaurkitchen.png"
+    img = "tasks2.jpg"
+    captionTitle = "task division"
+    captionDescription = "every recipe is divided in microtasks,"
+
+    [[slidinggallery.photos]]
+    img = "centaurkitchen.jpg"
     captionTitle = "the centaur kitchen"
     captionDescription = ""
 
@@ -37,29 +42,29 @@ video="GhostChef.webm"
     captionDescription = "deep fried chicken served with bacon flavoured chips"
 
   [gridgallery]
-    [[gridgallery.photos]]
-    id="sketchinkPlates"
-    img = "sketching.jpg"
-    captionTitle = "sketching Plates"
-    captionDescription = "Chef use to design plates on paper"
-
-    [[gridgallery.photos]]
-    id="tasks"
-    img = "tasks.jpg"
-    captionTitle = "task division"
-    captionDescription = "every recipe is divided in microtasks,"
-
-    [[gridgallery.photos]]
-    id="centaurkitchen"
-    img = "centaurkitchen.jpg"
-    captionTitle = "the centaur kitchen"
-    captionDescription = ""
-
-    [[gridgallery.photos]]
-    id="friedcicken"
-    img = "centaurkitchen2.jpg"
-    captionTitle = "# fried cicken"
-    captionDescription = "deep fried chicken served with bacon flavoured chips"
+    # [[gridgallery.photos]]
+    # id="sketchinkPlates"
+    # img = "sketching.jpg"
+    # captionTitle = "sketching Plates"
+    # captionDescription = "Chef use to design plates on paper"
+    #
+    # [[gridgallery.photos]]
+    # id="tasks"
+    # img = "tasks.jpg"
+    # captionTitle = "task division"
+    # captionDescription = "every recipe is divided in microtasks,"
+    #
+    # [[gridgallery.photos]]
+    # id="centaurkitchen"
+    # img = "centaurkitchen.jpg"
+    # captionTitle = "the centaur kitchen"
+    # captionDescription = ""
+    # 
+    # [[gridgallery.photos]]
+    # id="friedcicken"
+    # img = "centaurkitchen2.jpg"
+    # captionTitle = "# fried cicken"
+    # captionDescription = "deep fried chicken served with bacon flavoured chips"
 
     [[gridgallery.photos]]
     id="semantic"
@@ -67,6 +72,21 @@ video="GhostChef.webm"
     img = "semantics.jpg"
     captionTitle = "prototyping ghostchef"
     captionDescription = "understanding recipe semantics and adding probabilistic input"
+
+    [[gridgallery.photos]]
+    id="foodrelations"
+    video="foodrelations.webm"
+    img = "foodrelations.jpg"
+    captionTitle = "prototyping ghostchef"
+    captionDescription = "understanding recipe semantics and adding probabilistic input"
+
+    [[gridgallery.photos]]
+    id="googleApi"
+    video="googleApi.webm"
+    img = "googleApi.jpg"
+    captionTitle = "prototyping ghostchef"
+    captionDescription = "understanding recipe semantics and adding probabilistic input"
+
 
   [columnsgallery]
     [columnsgallery.headerimage]

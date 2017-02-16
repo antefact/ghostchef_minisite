@@ -7,14 +7,13 @@
           </div>
         </div>
         <div class="row">
-            {{ range .Site.Params.credits}}
-                <div class=col-sm-4>
+            {{ range .Page.Params.credits}}
+                <div class="col-sm-6 center-block">
                   <a href="{{.link}}">
                     <figure>
-                        <img class="img-responsive" src="{{$.Site.BaseURL}}img/{{.logo}}"/>
+                        <img class="img-responsive" src="{{$.Site.BaseURL}}img/{{$.Page.Params.datafolder}}/{{.logo}}"/>
                     </figure>
                   </a>
-
                 </div>
             {{end}}
         </div>

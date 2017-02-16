@@ -5,7 +5,7 @@ datafolder = "ghostchef"
 video="GhostChef.webm"
 
   [hero]
-    backgroundimage="centaurkitchen2.png"
+    backgroundimage="centaurkitchen2.jpg"
     backgroundvideo="ghostChef_header_background.webm"
     [[hero.buttons]]
       type="startMovie"
@@ -32,7 +32,7 @@ video="GhostChef.webm"
     captionDescription = ""
 
     [[slidinggallery.photos]]
-    img = "centaurkitchen2.png"
+    img = "centaurkitchen2.jpg"
     captionTitle = "# fried cicken"
     captionDescription = "deep fried chicken served with bacon flavoured chips"
 
@@ -48,12 +48,12 @@ video="GhostChef.webm"
     captionDescription = "every recipe is divided in microtasks,"
 
     [[gridgallery.photos]]
-    img = "centaurkitchen.png"
+    img = "centaurkitchen.jpg"
     captionTitle = "the centaur kitchen"
     captionDescription = ""
 
     [[gridgallery.photos]]
-    img = "centaurkitchen2.png"
+    img = "centaurkitchen2.jpg"
     captionTitle = "# fried cicken"
     captionDescription = "deep fried chicken served with bacon flavoured chips"
 

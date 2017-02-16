@@ -38,24 +38,35 @@ video="GhostChef.webm"
 
   [gridgallery]
     [[gridgallery.photos]]
+    id="sketchinkPlates"
     img = "sketching.jpg"
     captionTitle = "sketching Plates"
     captionDescription = "Chef use to design plates on paper"
 
     [[gridgallery.photos]]
+    id="tasks"
     img = "tasks.jpg"
     captionTitle = "task division"
     captionDescription = "every recipe is divided in microtasks,"
 
     [[gridgallery.photos]]
+    id="centaurkitchen"
     img = "centaurkitchen.jpg"
     captionTitle = "the centaur kitchen"
     captionDescription = ""
 
     [[gridgallery.photos]]
+    id="friedcicken"
     img = "centaurkitchen2.jpg"
     captionTitle = "# fried cicken"
     captionDescription = "deep fried chicken served with bacon flavoured chips"
+
+    [[gridgallery.photos]]
+    id="semantic"
+    video="semantics.webm"
+    img = "semantics.jpg"
+    captionTitle = "prototyping ghostchef"
+    captionDescription = "understanding recipe semantics and adding probabilistic input"
 
   [columnsgallery]
     [columnsgallery.headerimage]

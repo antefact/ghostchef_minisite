@@ -14,7 +14,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://antefact.github.io/ghostchef_minisite/ghostchef/</guid>
-      <description>&lt;section id=&#34;intro&#34; data-aos=&#34;fade-up&#34;&gt;
+      <description>&lt;p&gt;&lt;section id=&#34;intro&#34; data-aos=&#34;fade-up&#34;&gt;
     &lt;div class=&#34;container middle&#34;&gt;
         &lt;div class=&#34;row &#34;&gt;
             &lt;div class=&#34;col-md-9&#34;&gt;
@@ -33,8 +33,7 @@ We started this project by digging in the kitchen world. We worked with Mill and
     &lt;/div&gt;
 &lt;/section&gt;
 
-
-&lt;p&gt;&lt;section id=&#34;researchGallery&#34; class=&#34;slidingGallery&#34; data-aos=&#34;fade-up&#34;&gt;
+&lt;section id=&#34;researchGallery&#34; class=&#34;slidingGallery&#34; data-aos=&#34;fade-up&#34;&gt;
     &lt;div class=&#34;owl-carousel&#34;&gt;
         
             &lt;div class=&#34;item&#34;&gt;
@@ -62,7 +61,19 @@ We started this project by digging in the kitchen world. We worked with Mill and
             &lt;/div&gt;
         
             &lt;div class=&#34;item&#34;&gt;
-                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen_1440.png&#34;/&gt;
+                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks2_1440.jpg&#34;/&gt;
+                &lt;div class=&#34;caption&#34;&gt;
+                    &lt;h4 class=&#34;title&#34;&gt;
+                        task division
+                    &lt;/h4&gt;
+                    &lt;span class=&#34;paragraph&#34;&gt;
+                        every recipe is divided in microtasks,
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        
+            &lt;div class=&#34;item&#34;&gt;
+                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen_1440.jpg&#34;/&gt;
                 &lt;div class=&#34;caption&#34;&gt;
                     &lt;h4 class=&#34;title&#34;&gt;
                         the centaur kitchen
@@ -87,9 +98,8 @@ We started this project by digging in the kitchen world. We worked with Mill and
         
     &lt;/div&gt;
 &lt;/section&gt;
-&lt;/p&gt;
 
-&lt;p&gt;&lt;section id=&#34;process&#34; data-aos=&#34;fade-up&#34;&gt;
+&lt;section id=&#34;process&#34; data-aos=&#34;fade-up&#34;&gt;
     &lt;div class=&#34;container middle&#34;&gt;
         &lt;div class=&#34;row &#34;&gt;
             &lt;div class=&#34;col-md-9&#34;&gt;
@@ -105,40 +115,94 @@ We started this project by digging in the kitchen world. We worked with Mill and
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/section&gt;
-&lt;/p&gt;
 
-&lt;p&gt;&lt;section id=&#34;&#34; class=&#34;gridGallery&#34; data-aos=&#34;fade-up&#34;&gt;
+
+    
+        &lt;div style=&#34;display:none;&#34; id=&#34;semantic&#34;&gt;
+            &lt;video class=&#34;lg-video-object lg-html5&#34; controls preload=&#34;none&#34;&gt;
+                &lt;source src=&#34;https://antefact.github.io/ghostchef_minisite/vid/ghostchef/semantics.webm&#34; type=&#34;video/mp4&#34;&gt;
+                Your browser does not support HTML5 video.
+            &lt;/video&gt;
+        &lt;/div&gt;
+    
+
+    
+        &lt;div style=&#34;display:none;&#34; id=&#34;foodrelations&#34;&gt;
+            &lt;video class=&#34;lg-video-object lg-html5&#34; controls preload=&#34;none&#34;&gt;
+                &lt;source src=&#34;https://antefact.github.io/ghostchef_minisite/vid/ghostchef/foodrelations.webm&#34; type=&#34;video/mp4&#34;&gt;
+                Your browser does not support HTML5 video.
+            &lt;/video&gt;
+        &lt;/div&gt;
+    
+
+    
+        &lt;div style=&#34;display:none;&#34; id=&#34;googleApi&#34;&gt;
+            &lt;video class=&#34;lg-video-object lg-html5&#34; controls preload=&#34;none&#34;&gt;
+                &lt;source src=&#34;https://antefact.github.io/ghostchef_minisite/vid/ghostchef/googleApi.webm&#34; type=&#34;video/mp4&#34;&gt;
+                Your browser does not support HTML5 video.
+            &lt;/video&gt;
+        &lt;/div&gt;
+    
+
+
+&lt;section id=&#34;&#34; class=&#34;gridGallery&#34; data-aos=&#34;fade-up&#34;&gt;
 
     &lt;div class=&#34;container&#34;&gt;
         &lt;div class=&#34;row&#34;&gt;
+            &lt;div id=&#34;lightgallery&#34;&gt;
+                
 
-            &lt;div class=&#34;#lightgallery&#34;&gt;
+                    
+
+                        &lt;div
+                        data-poster=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/semantics_1440.jpg&#34;
+                        data-html=&#34;#semantic&#34;
+                        class=&#34;col-md-4 col-sm-6 col-xs-6 gallery-item&#34;
+                        data-sub-html=&#34;video caption1&#34;&gt;
+                            &lt;img
+                            src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/semantics_460.jpg&#34; class=&#34;img-responsive&#34;/&gt;
+                        &lt;/div&gt;
+
+                    
                 
-                    &lt;a href=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/sketching_1440.jpg&#34; class=&#34;col-md-6&#34;&gt;
-                        &lt;img src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/sketching_460.jpg&#34; class=&#34;img-responsive&#34;/&gt;
-                    &lt;/a&gt;
+
+                    
+
+                        &lt;div
+                        data-poster=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/foodrelations_1440.jpg&#34;
+                        data-html=&#34;#foodrelations&#34;
+                        class=&#34;col-md-4 col-sm-6 col-xs-6 gallery-item&#34;
+                        data-sub-html=&#34;video caption1&#34;&gt;
+                            &lt;img
+                            src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/foodrelations_460.jpg&#34; class=&#34;img-responsive&#34;/&gt;
+                        &lt;/div&gt;
+
+                    
                 
-                    &lt;a href=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks_1440.jpg&#34; class=&#34;col-md-6&#34;&gt;
-                        &lt;img src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks_460.jpg&#34; class=&#34;img-responsive&#34;/&gt;
-                    &lt;/a&gt;
+
+                    
+
+                        &lt;div
+                        data-poster=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/googleApi_1440.jpg&#34;
+                        data-html=&#34;#googleApi&#34;
+                        class=&#34;col-md-4 col-sm-6 col-xs-6 gallery-item&#34;
+                        data-sub-html=&#34;video caption1&#34;&gt;
+                            &lt;img
+                            src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/googleApi_460.jpg&#34; class=&#34;img-responsive&#34;/&gt;
+                        &lt;/div&gt;
+
+                    
                 
-                    &lt;a href=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen_1440.jpg&#34; class=&#34;col-md-6&#34;&gt;
-                        &lt;img src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen_460.jpg&#34; class=&#34;img-responsive&#34;/&gt;
-                    &lt;/a&gt;
-                
-                    &lt;a href=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen2_1440.jpg&#34; class=&#34;col-md-6&#34;&gt;
-                        &lt;img src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen2_460.jpg&#34; class=&#34;img-responsive&#34;/&gt;
-                    &lt;/a&gt;
-                
+
             &lt;/div&gt;
+
             
         &lt;/div&gt;
 
     &lt;/div&gt;
 &lt;/section&gt;
-&lt;/p&gt;
 
-&lt;p&gt;&lt;section id=&#34;concept&#34; data-aos=&#34;fade-up&#34;&gt;
+&lt;section id=&#34;concept&#34; data-aos=&#34;fade-up&#34;&gt;
     &lt;div class=&#34;container middle&#34;&gt;
         &lt;div class=&#34;row &#34;&gt;
             &lt;div class=&#34;col-md-9&#34;&gt;
@@ -160,9 +224,8 @@ Writing with a ghost chef is not like searching for a recipe on google, it&#39;s
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/section&gt;
-&lt;/p&gt;
 
-&lt;p&gt;&lt;section id=&#34;interactionDetail&#34; class=&#34;section-big inverted&#34; data-aos=&#34;fade-up&#34;&gt;
+&lt;section id=&#34;interactionDetail&#34; class=&#34;section-big inverted&#34; data-aos=&#34;fade-up&#34;&gt;
     &lt;div class=&#34;container&#34;&gt;
 
         &lt;div class=&#34;card card-12&#34;&gt;
@@ -240,9 +303,8 @@ Writing with a ghost chef is not like searching for a recipe on google, it&#39;s
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/section&gt;
-&lt;/p&gt;
 
-&lt;p&gt;&lt;section id=&#34;conclusion&#34; data-aos=&#34;fade-up&#34;&gt;
+&lt;section id=&#34;conclusion&#34; data-aos=&#34;fade-up&#34;&gt;
     &lt;div class=&#34;container middle&#34;&gt;
         &lt;div class=&#34;row &#34;&gt;
             &lt;div class=&#34;col-md-9&#34;&gt;
@@ -260,6 +322,54 @@ We are prototyping ghost chef to understand its limits and full potential, if yo
 
             &lt;/div&gt;
         &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&#34;callToAction&#34; data-aos=&#34;fade-up&#34;&gt;
+    &lt;div class=&#34;container middle&#34;&gt;
+        &lt;div class=&#34;row &#34;&gt;
+            &lt;div class=&#34;col-md-12&#34;&gt;
+                &lt;h1&gt;
+                  develop ghostchef with us
+                &lt;/h1&gt;
+                &lt;h3&gt;
+                  If you are interested in creating a future, open, quality data write to us.
+                  &lt;br&gt;
+                  &lt;span class=&#34;highlight-yellow&#34;&gt;ghostchef [at] bitsandbites . com&lt;/span&gt;
+                &lt;/h3&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id=&#34;credits&#34; data-aos=&#34;fade-up&#34;&gt;
+    &lt;div class=&#34;container middle&#34;&gt;
+
+        &lt;div class=&#34;row row-centered&#34;&gt;
+          &lt;div class=&#34;col-md-12 claim&#34;&gt;
+            a project by:
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;row&#34;&gt;
+            
+                &lt;div class=&#34;col-sm-6 center-block&#34;&gt;
+                  &lt;a href=&#34;http://www.bitsxbites.com&#34;&gt;
+                    &lt;figure&gt;
+                        &lt;img class=&#34;img-responsive&#34; src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/bxb_logo.png&#34;/&gt;
+                    &lt;/figure&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+            
+                &lt;div class=&#34;col-sm-6 center-block&#34;&gt;
+                  &lt;a href=&#34;http://www.mill-intelligence.com&#34;&gt;
+                    &lt;figure&gt;
+                        &lt;img class=&#34;img-responsive&#34; src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/mill-logo.png&#34;/&gt;
+                    &lt;/figure&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+            
+        &lt;/div&gt;
+
     &lt;/div&gt;
 &lt;/section&gt;
 &lt;/p&gt;

@@ -1,4 +1,5 @@
 var $root = $('html, body');
+
 $('a.anchor').click(function() {
     $root.animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 100
@@ -13,7 +14,7 @@ var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimation
 
 
 $(window).on('load', function() {
-    $('.owl-carousel').owlCarousel({
+    var mycarousel = $('.owl-carousel').owlCarousel({
         center: true,
         items: 1.1,
         loop: true,
@@ -24,6 +25,18 @@ $(window).on('load', function() {
             "<i class='fa fa-chevron-right fa-2x' aria-hidden='true'></i>"
         ],
     });
+
+    mycarousel.on('loaded.owl.lazy', function(event) {
+        var totitem = event.item.count + 2;
+        var nextitem = event.item.index + 1;
+
+        if (nextitem <= totitem) {
+            var imgsrc = $(event.target).find('.item').eq(nextitem).find('img').data('src');
+            console.log($(event.target).find('.item').eq(nextitem).find('img').attr("src"));
+            $(event.target).find('.item').eq(nextitem).find('img').attr("src",imgsrc).css("opacity","1");
+        }
+    });
+
     AOS.init({
         offset: 200,
         duration: 600,
@@ -37,14 +50,21 @@ $(document).ready(function() {
 
     // Video
 
-    $("#lightgallery").lightGallery(); 
+    var $lg = $('#lightgallery');
+
+    $lg.lightGallery({
+        selector: '.gallery-item',
+        mode: 'lg-fade',
+        cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)'
+    });
+
 
     $('#hero').on('inview', function(event, isInView) {
-      if (isInView) {
-        $('#mainNav').addClass("transparent");
-      } else {
-        $('#mainNav').removeClass("transparent");
-      }
+        if (isInView) {
+            $('#mainNav').addClass("transparent");
+        } else {
+            $('#mainNav').removeClass("transparent");
+        }
     });
 
 
@@ -79,17 +99,16 @@ $(document).ready(function() {
         playMovieFullScreenIfDevice();
     });
 
-
-        $("#bxbQRCode").click(function(event) {
-            event.preventDefault();
-            $(".sn-wechat .qrcode").toggleClass("qrcode_open");
-        });
+    $("#bxbQRCode").click(function(event) {
+        event.preventDefault();
+        $(".sn-wechat .qrcode").toggleClass("qrcode_open");
+    });
 
 
     function playMovieFullScreenIfDevice() {
         if (videoElem.paused == true) {
             if ($(window).width() > 739) {
-              $("#hero").css("z-index", "100");
+                $("#hero").css("z-index", "100");
 
             } else {
                 if (videoElem.requestFullscreen) {

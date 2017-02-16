@@ -284,6 +284,10 @@ a:hover {
     display: inline-block;
     width: 100%;
 
+    .caption{
+      padding: 40px 0px 20px 0px;
+    }
+
     &.card-6 {
         padding: 1% 4%;
     }
@@ -460,8 +464,9 @@ a:hover {
 
 .slidingGallery {
     .owl-carousel {
+      background-color: #000;
         .item {
-            border: 2px solid #fff;
+            border: 4px solid black;
 
             .caption {
                 background-color: #000;
@@ -470,6 +475,13 @@ a:hover {
                 left: 1em;
                 padding: 10px;
                 position: absolute;
+
+                @media (max-width: 767px) {
+                  position: relative;
+                      left: 0px;
+                      bottom: 0px;
+                      padding: 0px 20px;                }
+
 
                 h4 {
                     color: #fff;
@@ -663,7 +675,11 @@ body {
     background-color: #000;
     color: #fff;
     // overflow: hidden;
-    padding: 30px 50px;
+    padding: 30px 0px;
+
+    @media @bs3-xs {
+        margin-top: 60px;
+    }
 }
 
 .bb_footer .footerRightSec {
@@ -770,4 +786,12 @@ body {
     }
   }
 
+}
+
+#lightgallery {
+  padding: 15px;
+  .gallery-item{
+    padding: 0px;
+    border: 4px solid black;
+  }
 }

@@ -1,4 +1,5 @@
 var $root = $('html, body');
+
 $('a.anchor').click(function() {
     $root.animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 100
@@ -37,7 +38,14 @@ $(document).ready(function() {
 
     // Video
 
-    $("#lightgallery").lightGallery(); 
+    var $lg = $('#lightgallery');
+
+    $lg.lightGallery({
+      selector: '.gallery-item',
+      mode: 'lg-fade',
+      cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)'
+    });
+
 
     $('#hero').on('inview', function(event, isInView) {
       if (isInView) {

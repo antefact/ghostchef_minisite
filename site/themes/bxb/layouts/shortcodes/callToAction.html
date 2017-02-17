@@ -2,14 +2,14 @@
     <div class="container middle">
         <div class="row ">
             <div class="col-md-12">
-                <h1>
-                  {{.Page.Params.calltoaction}}
-                </h1>
                 <h3>
-                  If you are interested in creating a future, open, quality data write to us.
-                  <br>
-                  <span class="highlight-yellow">ghostchef [at] bitsandbites . com</span>
+                  {{.Page.Params.calltoaction.sentence}}
                 </h3>
+                <div class="buttons">
+                  <a href="{{.Page.Params.calltoaction.link}}" class="boxSpan">
+                    {{.Page.Params.calltoaction.buttonlabel}}
+                  </a>
+                </div>
             </div>
         </div>
     </div>

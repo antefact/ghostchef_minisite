@@ -3,7 +3,7 @@ title = "Ghost Chef"
 subtitle = "a research on artificial intelligence, creativity and food"
 datafolder = "ghostchef"
 video="GhostChef_2.webm"
-calltoaction="develop ghostchef with us"
+
 
   [hero]
     backgroundimage="centaurkitchen2.jpg"
@@ -11,10 +11,10 @@ calltoaction="develop ghostchef with us"
     [[hero.buttons]]
       type="startMovie"
       label="Watch the movie"
-    [[hero.buttons]]
-      type="anchor"
-      label="Read the Story"
-      anchor="#intro"
+    # [[hero.buttons]]
+    #   type="anchor"
+    #   label="Read the Story"
+    #   anchor="#intro"
 
   [slidinggallery]
     [[slidinggallery.photos]]
@@ -120,6 +120,11 @@ calltoaction="develop ghostchef with us"
     caption= "Access premium features like plating and task management."
     width=6
 
+  [calltoaction]
+    sentence = "We are looking for chefs and data scientists that want to build this future with us."
+    link = "mailto:yo@bitsxbites.com"
+    buttonlabel = "contact us"
+
     [[credits]]
     name = "bxb"
     logo = "bxb_logo.png"
@@ -177,6 +182,8 @@ We imagine a future where we do not need a lot of data, but the right one, where
 We are prototyping ghost chef to understand its limits and full potential, if you are a cook, an AI expert, a food semantic expert or just want to know more about this drop us a line.
 
 {{< /textSection >}}
+
+{{< bigVideo type="video" id="final_video" video="interaction.webm" img="googleApi.jpg" >}}
 
 {{< callToAction >}}
 

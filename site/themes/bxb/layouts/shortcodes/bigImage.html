@@ -1,0 +1,5 @@
+<section id="{{ if .Get "id" }}{{ .Get "id" }}{{ end }}" class"full-width-image" data-aos="fade-up">
+  <div class="imageBackground">
+      <img class="img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace (.Get "img") " ." " _1440." }}"/>
+  </div>
+</section>

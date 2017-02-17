@@ -1,13 +1,13 @@
 +++
 title = "Ghost Chef"
-subtitle = "a research on artificial intelligence, creativity and food"
+subtitle = "A research on artificial intelligence, creativity and food"
 datafolder = "ghostchef"
 video="GhostChef_2.webm"
-
 
   [hero]
     backgroundimage="centaurkitchen2.jpg"
     backgroundvideo="ghostChef_header_background.webm"
+
     [[hero.buttons]]
       type="startMovie"
       label="Watch the movie"
@@ -24,23 +24,23 @@ video="GhostChef_2.webm"
 
     [[slidinggallery.photos]]
     img = "tasks.jpg"
-    captionTitle = "task division"
-    captionDescription = "every recipe is divided in microtasks,"
+    captionTitle = "Task division"
+    captionDescription = "every recipe is divided in microtasks to be executed inside the kitchen restaurant"
 
     [[slidinggallery.photos]]
     img = "tasks2.jpg"
-    captionTitle = "task division"
-    captionDescription = "every recipe is divided in microtasks,"
+    captionTitle = "Task division"
+    captionDescription = "every recipe is divided in microtasks to be executed inside the kitchen restaurant"
 
     [[slidinggallery.photos]]
     img = "centaurkitchen.jpg"
-    captionTitle = "the centaur kitchen"
-    captionDescription = ""
+    captionTitle = "The centaur kitchen"
+    captionDescription = "Most kitchen are very small and very little technology has entered the kitchen in the last year. Tools are simple and reliable. "
 
     [[slidinggallery.photos]]
     img = "centaurkitchen2.jpg"
-    captionTitle = "# fried cicken"
-    captionDescription = "deep fried chicken served with bacon flavoured chips"
+    captionTitle = "#FriedCicken"
+    captionDescription = "One of the plates prepared for the centaur dinner: deep fried chicken served with bacon flavoured chips"
 
   [gridgallery]
     # [[gridgallery.photos]]
@@ -88,11 +88,10 @@ video="GhostChef_2.webm"
     captionTitle = "prototyping ghostchef"
     captionDescription = "understanding recipe semantics and adding probabilistic input"
 
-
   [columnsgallery]
     [columnsgallery.headerimage]
     name = "globalGIf"
-    fileName = "topGif.gif"
+    fileName = "co-write_2.gif"
     caption= "Just start interacting with ghostchef by writing in something. Feel free to start from an ingredient, a recipe, a combination or even an emotion."
     width=12
 

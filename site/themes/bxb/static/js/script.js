@@ -1,5 +1,8 @@
 var $root = $('html, body');
 
+
+
+
 $('a.anchor').click(function() {
     $root.animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 100
@@ -14,6 +17,10 @@ var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimation
 
 
 $(window).on('load', function() {
+
+  $("img.lazy").lazyload({
+    threshold : 200
+  });
     var mycarousel = $('.owl-carousel').owlCarousel({
         center: true,
         items: 1.1,
@@ -32,7 +39,7 @@ $(window).on('load', function() {
 
         if (nextitem <= totitem) {
             var imgsrc = $(event.target).find('.item').eq(nextitem).find('img').data('src');
-            console.log($(event.target).find('.item').eq(nextitem).find('img').attr("src"));
+//            console.log($(event.target).find('.item').eq(nextitem).find('img').attr("src"));
             $(event.target).find('.item').eq(nextitem).find('img').attr("src",imgsrc).css("opacity","1");
         }
     });
@@ -48,7 +55,6 @@ $(window).on('load', function() {
 
 $(document).ready(function() {
 
-    // Video
 
     var $lg = $('#lightgallery');
 

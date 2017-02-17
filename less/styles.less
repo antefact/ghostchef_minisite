@@ -391,9 +391,27 @@ a:hover {
 
     .buttons {
         position: absolute;
-        bottom: 5rem;
+        bottom: 9rem;
         text-align: center;
         width: 100%;
+
+        .boxSpan:hover{
+          cursor:pointer;
+        }
+
+        .fa-caret{
+          -webkit-color: #white;
+          -webkit-text-stroke-color: black;
+          -webkit-text-stroke-width: 4px;
+        }
+    }
+
+    .readAll {
+      position: absolute;
+      bottom: 1rem;
+      width: 100%;
+      left: 0;
+      font-weight: bold;
     }
 
     #videoPlayer {
@@ -466,8 +484,6 @@ a:hover {
     .owl-carousel {
       background-color: #000;
         .item {
-            border: 4px solid black;
-
             .caption {
                 background-color: #000;
                 color: #fff;
@@ -793,5 +809,22 @@ body {
   .gallery-item{
     padding: 0px;
     border: 4px solid black;
+  }
+}
+
+.videoBackground{
+  width: 100%;
+  height: 100%;
+  video{
+    width: 100%;
+  }
+}
+
+#callToAction{
+  h3{
+    text-align: center;
+  }
+  .buttons{
+    text-align: center;
   }
 }

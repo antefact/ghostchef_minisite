@@ -1,8 +1,6 @@
 var $root = $('html, body');
 
 
-
-
 $('a.anchor').click(function() {
     $root.animate({
         scrollTop: $($.attr(this, 'href')).offset().top - 100
@@ -13,8 +11,6 @@ $('a.anchor').click(function() {
 
 
 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
-
 
 $(window).on('load', function() {
 

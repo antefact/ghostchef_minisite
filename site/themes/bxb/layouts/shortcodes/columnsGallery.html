@@ -9,7 +9,7 @@
                   </span>
               </div>
                 <figure class="img-responsive">
-                    <img class="img-responsive" src="{{ $.Site.BaseURL }}img/{{.Page.Params.datafolder}}/{{.Page.Params.columnsgallery.headerimage.fileName}}"/>
+                    <img class="lazy img-responsive" data-original="{{ $.Site.BaseURL }}img/{{.Page.Params.datafolder}}/{{.Page.Params.columnsgallery.headerimage.fileName}}"/>
                 </figure>
 
             </div>
@@ -25,7 +25,7 @@
                           </span>
                       </div>
                         <figure class="img-responsive">
-                            <img class="img-responsive" src="{{$.Site.BaseURL}}img/{{$.Page.Params.datafolder}}/{{.fileName}}"/>
+                            <img class=" lazy img-responsive" data-original="{{$.Site.BaseURL}}img/{{$.Page.Params.datafolder}}/{{.fileName}}"/>
                         </figure>
 
                     </div>

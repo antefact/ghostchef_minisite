@@ -165,7 +165,7 @@
                   &lt;/span&gt;
               &lt;/div&gt;
                 &lt;figure class=&#34;img-responsive&#34;&gt;
-                    &lt;img class=&#34;img-responsive&#34; src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/co-write_2.gif&#34;/&gt;
+                    &lt;img class=&#34;lazy img-responsive&#34; data-original=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/co-write_2.gif&#34;/&gt;
                 &lt;/figure&gt;
 
             &lt;/div&gt;
@@ -181,7 +181,7 @@
                           &lt;/span&gt;
                       &lt;/div&gt;
                         &lt;figure class=&#34;img-responsive&#34;&gt;
-                            &lt;img class=&#34;img-responsive&#34; src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/gif2.gif&#34;/&gt;
+                            &lt;img class=&#34; lazy img-responsive&#34; data-original=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/gif2.gif&#34;/&gt;
                         &lt;/figure&gt;
 
                     &lt;/div&gt;
@@ -195,7 +195,7 @@
                           &lt;/span&gt;
                       &lt;/div&gt;
                         &lt;figure class=&#34;img-responsive&#34;&gt;
-                            &lt;img class=&#34;img-responsive&#34; src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/sliders.gif&#34;/&gt;
+                            &lt;img class=&#34; lazy img-responsive&#34; data-original=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/sliders.gif&#34;/&gt;
                         &lt;/figure&gt;
 
                     &lt;/div&gt;
@@ -209,7 +209,7 @@
                           &lt;/span&gt;
                       &lt;/div&gt;
                         &lt;figure class=&#34;img-responsive&#34;&gt;
-                            &lt;img class=&#34;img-responsive&#34; src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/learning.gif&#34;/&gt;
+                            &lt;img class=&#34; lazy img-responsive&#34; data-original=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/learning.gif&#34;/&gt;
                         &lt;/figure&gt;
 
                     &lt;/div&gt;
@@ -223,7 +223,7 @@
                           &lt;/span&gt;
                       &lt;/div&gt;
                         &lt;figure class=&#34;img-responsive&#34;&gt;
-                            &lt;img class=&#34;img-responsive&#34; src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/extensions.gif&#34;/&gt;
+                            &lt;img class=&#34; lazy img-responsive&#34; data-original=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/extensions.gif&#34;/&gt;
                         &lt;/figure&gt;
 
                     &lt;/div&gt;

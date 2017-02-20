@@ -15,7 +15,8 @@ var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimation
 $(window).on('load', function() {
 
   $("img.lazy").lazyload({
-    threshold : 200
+    threshold : 200,
+    effect : "fadeIn"
   });
     var mycarousel = $('.owl-carousel').owlCarousel({
         center: true,
@@ -52,13 +53,13 @@ $(window).on('load', function() {
 $(document).ready(function() {
 
 
-    var $lg = $('#lightgallery');
-
-    $lg.lightGallery({
-        selector: '.gallery-item',
-        mode: 'lg-fade',
-        cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)'
-    });
+    // var $lg = $('#lightgallery');
+    //
+    // $lg.lightGallery({
+    //     selector: '.gallery-item',
+    //     mode: 'lg-fade',
+    //     cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)'
+    // });
 
 
     $('#hero').on('inview', function(event, isInView) {

@@ -126,7 +126,7 @@ video="ghost3.webm"
 
     [[credits]]
     name = "bxb"
-    logo = "bxb_logo.png"
+    logo = "bxb-logo.png"
     link= "http://www.bitsxbites.com"
 
     [[credits]]

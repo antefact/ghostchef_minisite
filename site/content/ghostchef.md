@@ -2,7 +2,7 @@
 title = "Ghost Chef"
 subtitle = "A research on artificial intelligence, creativity and food"
 datafolder = "ghostchef"
-video="GhostChef_2.webm"
+video="ghost3.webm"
 
   [hero]
     backgroundimage="centaurkitchen2.jpg"

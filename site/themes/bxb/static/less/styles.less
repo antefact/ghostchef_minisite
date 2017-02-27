@@ -200,7 +200,6 @@ p {
     margin-bottom: 1em;
     @media @bs3-xs {
         font-size: 1em;
-        line-height: 0.9em;
     }
     @media @bs3-md {
         font-size: 0.9em;
@@ -444,9 +443,7 @@ a:hover {
         left: 0;
         overflow: hidden;
         z-index: -100;
-        @media (max-width: 767px) {
-            background: url('../assets/header_bg.jpg') center center / cover no-repeat;
-        }
+
 
         video {
             position: absolute;
@@ -465,6 +462,10 @@ a:hover {
             @media (max-width: 767px) {
                 display: none;
             }
+        }
+        img{
+          height: 100%;
+          margin-left: -50%;
         }
     }
 }

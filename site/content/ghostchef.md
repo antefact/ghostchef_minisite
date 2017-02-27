@@ -5,7 +5,7 @@ datafolder = "ghostchef"
 video="ghost3.webm"
 
   [hero]
-    backgroundimage="centaurkitchen2.jpg"
+    backgroundImage="bg_header_mobile.jpg"
     backgroundvideo="ghostChef_header_background.webm"
 
     [[hero.buttons]]

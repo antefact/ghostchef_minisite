@@ -1,6 +1,8 @@
 <section id="hero" data-aos="fade-up">
 
     <div class="videoBackground">
+        <img src="{{ $.Site.BaseURL }}img/{{.Params.datafolder}}/{{.Params.hero.backgroundImage}}">
+
         <video loop muted autoplay id="hero-video">
             <source src="{{.Site.BaseURL}}vid/{{.Params.datafolder}}/{{.Params.hero.backgroundvideo}}" type="video/webm">
             Your browser does not support the video tag.

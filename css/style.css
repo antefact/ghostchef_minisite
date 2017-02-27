@@ -9279,7 +9279,6 @@ p {
 @media only screen and (max-width:767px) {
   p {
     font-size: 1em;
-    line-height: 0.9em;
   }
 }
 @media only screen and (min-width:992px) {
@@ -9498,11 +9497,6 @@ a:hover {
   overflow: hidden;
   z-index: -100;
 }
-@media (max-width: 767px) {
-  #hero .videoBackground {
-    background: url('../assets/header_bg.jpg') center center / cover no-repeat;
-  }
-}
 #hero .videoBackground video {
   position: absolute;
   top: 0;
@@ -9526,6 +9520,10 @@ a:hover {
   #hero .videoBackground video {
     display: none;
   }
+}
+#hero .videoBackground img {
+  height: 100%;
+  margin-left: -50%;
 }
 #video .videoContainer {
   position: relative;

@@ -33,11 +33,13 @@
 &lt;/section&gt;
 
 
-&lt;p&gt;&lt;section id=&#34;researchGallery&#34; class=&#34;slidingGallery&#34; data-aos=&#34;fade-up&#34;&gt;
+&lt;p&gt;&lt;section id=&#34;&#34; class=&#34;slidingGallery&#34; data-aos=&#34;fade-up&#34;&gt;
     &lt;div class=&#34;owl-carousel&#34;&gt;
         
             &lt;div class=&#34;item&#34;&gt;
-                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/sketching_1440.jpg&#34;/&gt;
+                
+                    &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/sketching.jpg&#34;/&gt;
+                
                 &lt;div class=&#34;caption&#34;&gt;
                     &lt;h4 class=&#34;title&#34;&gt;
                         sketching Plates
@@ -49,7 +51,9 @@
             &lt;/div&gt;
         
             &lt;div class=&#34;item&#34;&gt;
-                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks_1440.jpg&#34;/&gt;
+                
+                    &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks.jpg&#34;/&gt;
+                
                 &lt;div class=&#34;caption&#34;&gt;
                     &lt;h4 class=&#34;title&#34;&gt;
                         Task division
@@ -61,7 +65,9 @@
             &lt;/div&gt;
         
             &lt;div class=&#34;item&#34;&gt;
-                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks2_1440.jpg&#34;/&gt;
+                
+                    &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/tasks2.jpg&#34;/&gt;
+                
                 &lt;div class=&#34;caption&#34;&gt;
                     &lt;h4 class=&#34;title&#34;&gt;
                         Task division
@@ -73,7 +79,9 @@
             &lt;/div&gt;
         
             &lt;div class=&#34;item&#34;&gt;
-                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen_1440.jpg&#34;/&gt;
+                
+                    &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen.jpg&#34;/&gt;
+                
                 &lt;div class=&#34;caption&#34;&gt;
                     &lt;h4 class=&#34;title&#34;&gt;
                         The centaur kitchen
@@ -85,13 +93,53 @@
             &lt;/div&gt;
         
             &lt;div class=&#34;item&#34;&gt;
-                &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen2_1440.jpg&#34;/&gt;
+                
+                    &lt;img class=&#34;owl-lazy img-responsive&#34; data-src=&#34;https://antefact.github.io/ghostchef_minisite/img/ghostchef/centaurkitchen2.jpg&#34;/&gt;
+                
                 &lt;div class=&#34;caption&#34;&gt;
                     &lt;h4 class=&#34;title&#34;&gt;
                         #FriedCicken
                     &lt;/h4&gt;
                     &lt;span class=&#34;paragraph&#34;&gt;
                         One of the plates prepared for the centaur dinner: deep fried chicken served with bacon flavoured chips
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        
+            &lt;div class=&#34;item&#34;&gt;
+                
+                    &lt;div class=&#34;videoBackground&#34;&gt;
+                        &lt;video loop muted autoplay controls&gt;
+                            &lt;source src=&#34;https://antefact.github.io/ghostchef_minisite/vid/ghostchef/foodrelations.webm&#34; type=&#34;video/webm&#34;/&gt;
+                            Your browser does not support the video tag.
+                        &lt;/video&gt;
+                    &lt;/div&gt;
+                
+                &lt;div class=&#34;caption&#34;&gt;
+                    &lt;h4 class=&#34;title&#34;&gt;
+                        FoodConnections
+                    &lt;/h4&gt;
+                    &lt;span class=&#34;paragraph&#34;&gt;
+                        a very early experiment with the goal of understanding how ingredients are combined together in a recipe; by analyzing a big set of recipe we could create a sort of interactive word cloud you could use to discover new food combinations
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        
+            &lt;div class=&#34;item&#34;&gt;
+                
+                    &lt;div class=&#34;videoBackground&#34;&gt;
+                        &lt;video loop muted autoplay controls&gt;
+                            &lt;source src=&#34;https://antefact.github.io/ghostchef_minisite/vid/ghostchef/semantics.webm&#34; type=&#34;video/webm&#34;/&gt;
+                            Your browser does not support the video tag.
+                        &lt;/video&gt;
+                    &lt;/div&gt;
+                
+                &lt;div class=&#34;caption&#34;&gt;
+                    &lt;h4 class=&#34;title&#34;&gt;
+                        understanding food semantics
+                    &lt;/h4&gt;
+                    &lt;span class=&#34;paragraph&#34;&gt;
+                        using google natural language API we could understand the key element of a recipe and the relations between the words someone would type, accordingly to the analysis we could then decide how and where add new words to the recipe
                     &lt;/span&gt;
                 &lt;/div&gt;
             &lt;/div&gt;
@@ -123,8 +171,8 @@
 
 &lt;p&gt;&lt;section id=&#34;prototype_video&#34; class=&#34;full-width-video&#34; data-aos=&#34;fade-up&#34;&gt;
         &lt;div class=&#34;videoBackground&#34;&gt;
-            &lt;video loop muted autoplay&gt;
-                &lt;source src=&#34;https://antefact.github.io/ghostchef_minisite/vid/ghostchef/semantics.webm&#34; type=&#34;video/webm&#34;/&gt;
+            &lt;video loop muted autoplay controls&gt;
+                &lt;source src=&#34;https://antefact.github.io/ghostchef_minisite/vid/ghostchef/moneyshot.webm&#34; type=&#34;video/webm&#34;/&gt;
                 Your browser does not support the video tag.
             &lt;/video&gt;
         &lt;/div&gt;
@@ -261,8 +309,8 @@
 
 &lt;p&gt;&lt;section id=&#34;final_video&#34; class=&#34;full-width-video&#34; data-aos=&#34;fade-up&#34;&gt;
         &lt;div class=&#34;videoBackground&#34;&gt;
-            &lt;video loop muted autoplay&gt;
-                &lt;source src=&#34;https://antefact.github.io/ghostchef_minisite/vid/ghostchef/interaction.webm&#34; type=&#34;video/webm&#34;/&gt;
+            &lt;video loop muted autoplay controls&gt;
+                &lt;source src=&#34;https://antefact.github.io/ghostchef_minisite/vid/ghostchef/sliders.webm&#34; type=&#34;video/webm&#34;/&gt;
                 Your browser does not support the video tag.
             &lt;/video&gt;
         &lt;/div&gt;

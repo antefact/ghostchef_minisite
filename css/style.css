@@ -9537,10 +9537,11 @@ a:hover {
 .slidingGallery .owl-carousel .item .caption {
   background-color: #000;
   color: #fff;
-  bottom: 1em;
-  left: 1em;
+  bottom: 40px;
+  left: 40px;
   padding: 10px;
   position: absolute;
+  right: 40px;
 }
 @media (max-width: 767px) {
   .slidingGallery .owl-carousel .item .caption {

@@ -1,8 +1,17 @@
-<section id="{{ if .Get "id" }}{{ .Get "id" }}{{ end }}" class="slidingGallery" data-aos="fade-up">
+<section id="{{ if .Get " id" }}{{ .Get " id" }}{{ end }}" class="slidingGallery" data-aos="fade-up">
     <div class="owl-carousel">
-        {{range .Page.Params.slidinggallery.photos}}
+        {{range .Page.Params.slidinggallery.item}}
             <div class="item">
-                <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img "." "_1440." }}"/>
+                {{if eq .type "photo" }}
+                    <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img " ." " _1440." }}"/>
+                {{else}}
+                    <div class="videoBackground">
+                        <video loop muted autoplay>
+                            <source src="{{$.Site.BaseURL}}vid/{{$.Page.Params.datafolder}}/{{.video}}" type="video/webm"/>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                {{end}}
                 <div class="caption">
                     <h4 class="title">
                         {{ .captionTitle}}

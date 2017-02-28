@@ -17,30 +17,41 @@ video="ghost3.webm"
     #   anchor="#intro"
 
   [slidinggallery]
-    [[slidinggallery.photos]]
+    [[slidinggallery.item]]
+    type="photo"
     img = "sketching.jpg"
     captionTitle = "sketching Plates"
     captionDescription = "Chef use to design plates on paper"
 
-    [[slidinggallery.photos]]
+    [[slidinggallery.item]]
+    type="photo"
     img = "tasks.jpg"
     captionTitle = "Task division"
     captionDescription = "every recipe is divided in microtasks to be executed inside the kitchen restaurant"
 
-    [[slidinggallery.photos]]
+    [[slidinggallery.item]]
+    type="photo"
     img = "tasks2.jpg"
     captionTitle = "Task division"
     captionDescription = "every recipe is divided in microtasks to be executed inside the kitchen restaurant"
 
-    [[slidinggallery.photos]]
+    [[slidinggallery.item]]
+    type="photo"
     img = "centaurkitchen.jpg"
     captionTitle = "The centaur kitchen"
     captionDescription = "Most kitchen are very small and very little technology has entered the kitchen in the last year. Tools are simple and reliable. "
 
-    [[slidinggallery.photos]]
+    [[slidinggallery.item]]
+    type="photo"
     img = "centaurkitchen2.jpg"
     captionTitle = "#FriedCicken"
     captionDescription = "One of the plates prepared for the centaur dinner: deep fried chicken served with bacon flavoured chips"
+
+    [[slidinggallery.item]]
+    type="video"
+    video = "semantics.webm"
+    captionTitle = "semantics"
+    captionDescription = "prototyping bla bla"
 
   [gridgallery]
     # [[gridgallery.photos]]

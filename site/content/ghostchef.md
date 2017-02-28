@@ -49,9 +49,16 @@ video="ghost3.webm"
 
     [[slidinggallery.item]]
     type="video"
+    video = "foodrelations.webm"
+    captionTitle = "FoodConnections"
+    captionDescription = "a very early experiment with the goal of understanding how ingredients are combined together in a recipe; by analyzing a big set of recipe we could create a sort of interactive word cloud you could use to discover new food combinations"
+
+    [[slidinggallery.item]]
+    type="video"
     video = "semantics.webm"
-    captionTitle = "semantics"
-    captionDescription = "prototyping bla bla"
+    captionTitle = "understanding food semantics"
+    captionDescription = "using google natural language API we could understand the key element of a recipe and the relations between the words someone would type, accordingly to the analysis we could then decide how and where add new words to the recipe"
+
 
   [gridgallery]
     # [[gridgallery.photos]]
@@ -165,7 +172,7 @@ While visual language became very big in the all food universe, we choose to hav
 
 {{< /textSection >}}
 
-{{< bigVideo type="video" id="prototype_video" video="semantics.webm" img="googleApi.jpg" >}}
+{{< bigVideo type="video" id="prototype_video" video="moneyshot.webm" img="googleApi.jpg" >}}
 
 {{< textSection id="concept" title="Collaborating with an ‘artificial’ foodie">}}
 
@@ -193,7 +200,7 @@ We are prototyping ghost chef to understand its limits and full potential, if yo
 
 {{< /textSection >}}
 
-{{< bigVideo type="video" id="final_video" video="interaction.webm" img="googleApi.jpg" >}}
+{{< bigVideo type="video" id="final_video" video="sliders.webm" img="googleApi.jpg" >}}
 
 {{< callToAction >}}
 

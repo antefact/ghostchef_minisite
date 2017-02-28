@@ -6,7 +6,7 @@
                     <img class="owl-lazy img-responsive" data-src="{{ $.Site.BaseURL }}img/{{$.Page.Params.datafolder}}/{{ replace .img " ." " _1440." }}"/>
                 {{else}}
                     <div class="videoBackground">
-                        <video loop muted autoplay>
+                        <video loop muted autoplay controls>
                             <source src="{{$.Site.BaseURL}}vid/{{$.Page.Params.datafolder}}/{{.video}}" type="video/webm"/>
                             Your browser does not support the video tag.
                         </video>

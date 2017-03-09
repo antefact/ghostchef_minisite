@@ -1,6 +1,6 @@
 <section id="{{ if .Get "id" }}{{ .Get "id" }}{{ end }}" class="full-width-video" data-aos="fade-up">
         <div class="videoBackground">
-            <video loop muted autoplay controls>
+            <video controls>
                 <source src="{{.Site.BaseURL}}vid/{{.Page.Params.datafolder}}/{{.Get "video"}}" type="video/webm"/>
                 Your browser does not support the video tag.
             </video>

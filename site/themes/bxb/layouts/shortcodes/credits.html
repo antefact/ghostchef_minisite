@@ -8,7 +8,7 @@
         </div>
         <div class="row">
             {{ range .Page.Params.credits}}
-                <div class="col-sm-6 center-block">
+                <div class="col-sm-6 col-xs-6 center-block">
                   <a href="{{.link}}">
                     <figure>
                         <img class="img-responsive" src="{{$.Site.BaseURL}}img/{{$.Page.Params.datafolder}}/{{.logo}}"/>

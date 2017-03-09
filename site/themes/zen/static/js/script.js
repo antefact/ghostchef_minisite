@@ -23,7 +23,7 @@ $(window).on('load', function() {
         ],
     });
     AOS.init({
-          offset: 200,
+          offset: 400,
           duration: 600,
           easing: 'ease-in-sine',
           delay: 100,

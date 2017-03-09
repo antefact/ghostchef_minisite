@@ -1,4 +1,16 @@
 <section id="callToAction" data-aos="fade-up">
+
+  <div class="videoBackground">
+      <img src="{{ $.Site.BaseURL }}img/{{.Page.Params.datafolder}}/{{.Get "image"}}"> 
+
+      <video loop muted autoplay id="callToAction-video">
+          <source src="{{.Site.BaseURL}}vid/{{.Page.Params.datafolder}}/{{.Get "video"}}" type="video/webm">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+
+  <div class="textureOverlay"></div>
+
     <div class="container middle">
         <div class="row ">
             <div class="col-md-12">

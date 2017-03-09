@@ -29,7 +29,7 @@
             {{ if eq .type "anchor" }}
                 <a href="{{.anchor}}" class="boxSpan anchor">{{.label}}</a>
             {{else if eq .type "startMovie"}}
-                <span class="boxSpan" id="watchMovie">watch the movie</span>
+                <span class="boxSpan" id="watchMovie">{{.label}}</span>
             {{ end }}
         {{end}}
     </div>

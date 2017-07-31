@@ -1,4 +1,4 @@
-baseurl = "https://antefact.github.io/ghostchef_minisite/"
+baseurl = "http://ghostchef.netlify.com/"
 languageCode = "en-us"
 title = "Underground"
 theme ="bxb"
@@ -16,7 +16,7 @@ theme ="bxb"
   [params.about]
     title="we are so cool"
     paragraph="underground is an initiative powered by bitsxbites promoting collaborations between designers, technologists, scientists in exploring what the future of food will look like."
-    
+
 
 
   # Navigation

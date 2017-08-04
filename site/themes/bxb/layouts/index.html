@@ -1,9 +1,8 @@
-{{ partial "header.html" .}}
-{{ partial "nav.html" . }}
+{{ partial "header.html" . }}
+<!-- {{ partial "nav.html" . }} -->
 
-{{ partial "hero.html" . }}
-{{ partial "about.html" . }}
+{{ partial "single_hero.html" . }}
 
-{{ partial "portfolio.html" . }}
+{{ .Content }}
 
-{{partial "footer.html" .}}
+{{ partial "footer.html" . }}

@@ -61,7 +61,6 @@ module.exports = (grunt) ->
                         # { name: '768', width: 768 }
                         # { name: '480', width: 768 }
 
-
                     ]
                 files: [
                     expand: true
